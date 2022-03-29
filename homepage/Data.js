@@ -296,3 +296,5 @@ var singleObj = {
      imageUrl6: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDMtMS0zNzI0MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=" ,
    
 };
+
+export {hourlyPrizeObj ,  faceEssentialsProdObj,mostWantedCombosProdObj,backgroundImageObj,singleObj}
