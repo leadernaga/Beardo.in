@@ -1,5 +1,4 @@
-var slide1Obj = [
-    {
+var slide1Obj = [{
         backgroundImageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL3ZpcF9zYWxlX2RvdGQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
         vipImageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL3Jzel92aXBfaG91cnNfbG9nby1taW4ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
         imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ubmJlYXJkby1tZWdhLWhlbXAtY29tYm8tNTEyeDUxMi0zNjg1MC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
@@ -17,7 +16,7 @@ var slide1Obj = [
         price: "₹ 999",
         discountSticker: "https://cdn.beardo.in/vipclubsale2021/badge/VIP_Sale_Discount_Icon_70%25.png"
     },
-    
+
     {
         backgroundImageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL3ZpcF9zYWxlX2RvdGQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
         vipImageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL3Jzel92aXBfaG91cnNfbG9nby1taW4ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
@@ -36,13 +35,12 @@ var slide1Obj = [
         price: "₹ 888",
         discountSticker: "https://cdn.beardo.in/vipclubsale2021/badge/VIP_Sale_Discount_Icon_58%25.png"
     }
-    
+
 ];
+localStorage.setItem("slider1", JSON.stringify(slide1Obj));
 
 
-
-var topSellersProdObj = [
-    {
+var topSellersProdObj = [{
         imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9waG90by1mYWNlLWNvbWJvLTUxMng1MTItMzcxMzMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjI4MywiZml0Ijoib3V0c2lkZSJ9fX0=",
         name: "Beardo Photo Face Combo",
         cutPrice: "₹ 1225",
@@ -71,35 +69,34 @@ var topSellersProdObj = [
         discountSticker: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzU4LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ=="
     }
 ];
-
+localStorage.setItem("topsellers", JSON.stringify(topSellersProdObj));
 //hourlyPrizeObj
 
-var hourlyPrizeObj = [
-        {
-        imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9lbGl0ZS1iZWFyZG8tZ2lmdC1zZXQtNTEyeDUxMi0zNzAyMS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=" ,
+var hourlyPrizeObj = [{
+        imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9lbGl0ZS1iZWFyZG8tZ2lmdC1zZXQtNTEyeDUxMi0zNzAyMS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
         name: "Elite Beardo Gift Set",
-        price:"WORTH ₹3293",  
-        winnerName:"@Rohan Gangurde"
-        },
-        {
+        price: "WORTH ₹3293",
+        winnerName: "@Rohan Gangurde"
+    },
+    {
         imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRpbWF0ZS1wZXJmdW1lLWNvbWJvLTUxMng1MTItMzcwMjUucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
         name: "Ultimate Perfume combo",
-        price:"WORTH ₹3600",  
-        winnerName:"@The MK 9 salon Razzaq kazi"
-        },
-        {
-            imageUrl:"https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbWF6b24tY2FyZC1yczUwMDAtMTcweDIwMC0zNzAxNy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
-            name: "Amazon Voucher worth ",
-            price:"WORTH ₹5000",  
-            winnerName:"@Shivang Khanna"
-        }
-        
-        
-      ];
-      
-
-      var hotSellersProdObj = [
+        price: "WORTH ₹3600",
+        winnerName: "@The MK 9 salon Razzaq kazi"
+    },
     {
+        imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbWF6b24tY2FyZC1yczUwMDAtMTcweDIwMC0zNzAxNy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+        name: "Amazon Voucher worth ",
+        price: "WORTH ₹5000",
+        winnerName: "@Shivang Khanna"
+    }
+
+
+];
+localStorage.setItem("hourlyData", JSON.stringify(hourlyPrizeObj));
+
+
+var hotSellersProdObj = [{
         imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRyYWdsb3ctZnctdWx0cmFnbG93LWxvdGlvbi01MTJ4NTEyLTM3MDkwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0IjoyODMsImZpdCI6Im91dHNpZGUifX19",
         name: "Beardo Ultraglow Face Cream & Ultraglow Facewash Combo",
         cutPrice: "₹ 675",
@@ -127,15 +124,15 @@ var hourlyPrizeObj = [
         price: "₹ 999",
         discountSticker: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzcyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ=="
     }
-   
+
 ];
 
+localStorage.setItem("hotSeller", JSON.stringify(hotSellersProdObj));
 
 
 // face essentails
 
-var faceEssentialsProdObj = [
-    {
+var faceEssentialsProdObj = [{
         imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtZmFjZXdhc2gtNTEyeDUxMi0zLTEzMDQ0LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0IjoyODMsImZpdCI6Im91dHNpZGUifX19",
         name: "Beardo Activated Charcoal Facewash (100ml)",
         cutPrice: "₹ 275",
@@ -192,12 +189,12 @@ var faceEssentialsProdObj = [
         discountSticker: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzUwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ=="
     }
 ];
+localStorage.setItem("face", JSON.stringify(faceEssentialsProdObj));
 
 
 // most waited combos
 
-var mostWantedCombosProdObj = [
-    {
+var mostWantedCombosProdObj = [{
         imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtY29tYm8tZ3JleS1iYWNrZ3JvdW5kLTM1OTQ1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0IjoyODMsImZpdCI6Im91dHNpZGUifX19",
         name: "Beardo Activated Charcoal Combo",
         cutPrice: "₹ 875",
@@ -268,33 +265,36 @@ var mostWantedCombosProdObj = [
         discountSticker: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoibWFmaWEyMS9iYWRnZS81NS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0="
     }
 ];
+localStorage.setItem("combo", JSON.stringify(mostWantedCombosProdObj));
 
 
 //background images
 var backgroundImageObj = {
     slideImageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL3ZpcF9zYWxlX2RvdGQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
-    roomImageUrl: "https://cdn.beardo.in/newhome/new-home-bg-dark2.jpg" ,
-    imageUrl1: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWFmaWEtc2FsZS13ZWJzaXRlLWJhbm5lci0wMi0xMDQ3OC0yMzc5Mi0zMDc1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=" ,
-    imageUrl2: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDUtMS0zNjk1MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=" ,
-    imageUrl3: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWFmaWEtc2FsZS13ZWJzaXRlLWJhbm5lci0wMS0xLTEwNTEwLTEwNTUwLTMwNzU5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==" ,
-    imageUrl4: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWFmaWEtc2FsZS13ZWJzaXRlLWJhbm5lci0wNC0xMDU0OS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=" ,
-    fireGifImageUrl: " https://https://cdn.beardo.in/fire.gif" 
-    
+    roomImageUrl: "https://cdn.beardo.in/newhome/new-home-bg-dark2.jpg",
+    imageUrl1: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWFmaWEtc2FsZS13ZWJzaXRlLWJhbm5lci0wMi0xMDQ3OC0yMzc5Mi0zMDc1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    imageUrl2: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDUtMS0zNjk1MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    imageUrl3: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWFmaWEtc2FsZS13ZWJzaXRlLWJhbm5lci0wMS0xLTEwNTEwLTEwNTUwLTMwNzU5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    imageUrl4: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWFmaWEtc2FsZS13ZWJzaXRlLWJhbm5lci0wNC0xMDU0OS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    fireGifImageUrl: " https://https://cdn.beardo.in/fire.gif"
+
 };
+localStorage.setItem("single_bg_images", JSON.stringify(backgroundImageObj));
 
 
 // single images
 var singleObj = {
-     desktopImageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9zYWxlYmVhcmRvLXNreS1iYW5uZXItMTYwMHgxMjAtMzcyNjQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjEsImZpdCI6Im91dHNpZGUifX19" ,
-     mobileImageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kc2FsZWJlYXJkby12aXAtc2FsZS1za3ktYmFubmVyLTEyMDAteC0zMDAtZmluYWwtMzcyNjUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo0MjAsImhlaWdodCI6MSwiZml0Ijoib3V0c2lkZSJ9fX0=" ,
-     videoUrl: "https://beardoc.s3.ap-south-1.amazonaws.com/mafia/mafia-video.mp4" ,
-     imageUrl1: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDYtMzY5ODYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19" ,
-     imageUrl2: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDIxMS0zNjk3OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=" ,
-     imageUrl3: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDEtMzY5NzMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19" ,
-     imageUrl4: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kb24tY29sbGVjdGlvbi0zNjk4Mi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=" ,
-     imageUrl5: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDQtMS0zNzIwMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=" ,
-     imageUrl6: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDMtMS0zNzI0MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=" ,
-   
-};
+    desktopImageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9zYWxlYmVhcmRvLXNreS1iYW5uZXItMTYwMHgxMjAtMzcyNjQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjEsImZpdCI6Im91dHNpZGUifX19",
+    mobileImageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kc2FsZWJlYXJkby12aXAtc2FsZS1za3ktYmFubmVyLTEyMDAteC0zMDAtZmluYWwtMzcyNjUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo0MjAsImhlaWdodCI6MSwiZml0Ijoib3V0c2lkZSJ9fX0=",
+    videoUrl: "https://beardoc.s3.ap-south-1.amazonaws.com/mafia/mafia-video.mp4",
+    imageUrl1: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDYtMzY5ODYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+    imageUrl2: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDIxMS0zNjk3OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    imageUrl3: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDEtMzY5NzMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+    imageUrl4: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kb24tY29sbGVjdGlvbi0zNjk4Mi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    imageUrl5: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDQtMS0zNzIwMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    imageUrl6: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDMtMS0zNzI0MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
 
-export {hourlyPrizeObj ,  faceEssentialsProdObj,mostWantedCombosProdObj,backgroundImageObj,singleObj}
+};
+localStorage.setItem("single_images", JSON.stringify(singleObj));
+
+export { hourlyPrizeObj, faceEssentialsProdObj, mostWantedCombosProdObj, backgroundImageObj, singleObj }
