@@ -284,14 +284,14 @@ h3 {
 }
 
 #footerimgg {
-    margin-left: 250px;
+    margin-left: 275px;
     height: 50px;
     width: 120px;
 }
 
 video {
-    width: 95%;
-    margin-left: 2%;
+    width: 80%;
+    margin-left: 10%;
 }
 
 #divaddtocart {
@@ -467,7 +467,31 @@ img {
 }
 
 .pdiv {
-    background-color: white;
+    background-color: lightgray;
     margin: 10px;
     border-radius: 12px;
+}
+
+.viewButton {
+    width: 86px;
+    height: 20px;
+    border: none;
+    display: flex;
+    font-size: 12px;
+    color: #fbd2a0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 auto;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-top: 8px;
+    text-decoration: none;
+    border-bottom: 2px solid;
+    background-color: black;
+}
+
+
 }
