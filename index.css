@@ -3,10 +3,6 @@
     border: 2px solid white;
 }
 
-*box {
-    box-sizing: border-box;
-}
-
 html,
 body {
     overflow-x: hidden;
@@ -203,6 +199,7 @@ body {
 #box2 {
     display: flex;
     justify-content: space-between;
+    margin: auto 0;
     /* border: 1px solid red; */
 }
 
@@ -256,7 +253,7 @@ h3 {
 #box2>img {
     height: 20px;
     width: 20px;
-    margin: 12px;
+    margin: 15px;
 }
 
 #menuscroll {
@@ -411,52 +408,34 @@ img {
 }
 
 #tscontainer {
-    /* width: 40%; */
-    /* background-color: white; */
-    /* margin: 1px; */
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    /* border-radius: 12px; */
 }
 
 #afterprize {
-    /* width: 40%; */
-    /* background-color: white; */
     display: grid;
     grid-template-columns: repeat(2, 50%);
     /* border-radius: 12px; */
 }
 
 #faceEssentials {
-    /* width: 40%; */
-    /* background-color: white; */
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    /* border-radius: 12px; */
 }
 
 #mostWantedCombos {
-    /* width: 40%; */
-    /* background-color: white; */
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    /* border-radius: 12px; */
 }
 
 #hotSeller_container {
-    /* width: 40%; */
-    /* background-color: white; */
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    /* border-radius: 12px; */
 }
 
 #comboDisplay {
-    /* width: 40%; */
-    /* background-color: white; */
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    /* border-radius: 12px; */
 }
 
 .cartButton {
@@ -467,7 +446,7 @@ img {
 }
 
 .pdiv {
-    background-color: lightgray;
+    background-color: white;
     margin: 10px;
     border-radius: 12px;
 }
