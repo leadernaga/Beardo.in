@@ -37,7 +37,7 @@ var slide1Obj = [{
     }
 
 ];
-localStorage.setItem("slider1", JSON.stringify(slide1Obj));
+// localStorage.setItem("slider1", JSON.stringify(slide1Obj));
 
 
 var topSellersProdObj = [{
@@ -69,7 +69,7 @@ var topSellersProdObj = [{
         discountSticker: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzU4LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ=="
     }
 ];
-localStorage.setItem("topsellers", JSON.stringify(topSellersProdObj));
+// localStorage.setItem("topsellers", JSON.stringify(topSellersProdObj));
 //hourlyPrizeObj
 
 var hourlyPrizeObj = [{
@@ -93,7 +93,7 @@ var hourlyPrizeObj = [{
 
 
 ];
-localStorage.setItem("hourlyData", JSON.stringify(hourlyPrizeObj));
+// localStorage.setItem("hourlyData", JSON.stringify(hourlyPrizeObj));
 
 
 var hotSellersProdObj = [{
@@ -127,7 +127,7 @@ var hotSellersProdObj = [{
 
 ];
 
-localStorage.setItem("hotSeller", JSON.stringify(hotSellersProdObj));
+// localStorage.setItem("hotSeller", JSON.stringify(hotSellersProdObj));
 
 
 // face essentails
@@ -189,7 +189,7 @@ var faceEssentialsProdObj = [{
         discountSticker: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzUwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ=="
     }
 ];
-localStorage.setItem("face", JSON.stringify(faceEssentialsProdObj));
+// localStorage.setItem("face", JSON.stringify(faceEssentialsProdObj));
 
 
 // most waited combos
@@ -265,7 +265,7 @@ var mostWantedCombosProdObj = [{
         discountSticker: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoibWFmaWEyMS9iYWRnZS81NS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0="
     }
 ];
-localStorage.setItem("combo", JSON.stringify(mostWantedCombosProdObj));
+// localStorage.setItem("combo", JSON.stringify(mostWantedCombosProdObj));
 
 
 //background images
@@ -279,7 +279,7 @@ var backgroundImageObj = {
     fireGifImageUrl: " https://https://cdn.beardo.in/fire.gif"
 
 };
-localStorage.setItem("single_bg_images", JSON.stringify(backgroundImageObj));
+// localStorage.setItem("single_bg_images", JSON.stringify(backgroundImageObj));
 
 
 // single images
@@ -295,6 +295,77 @@ var singleObj = {
     imageUrl6: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDMtMS0zNzI0MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
 
 };
-localStorage.setItem("single_images", JSON.stringify(singleObj));
+// localStorage.setItem("single_images", JSON.stringify(singleObj));
 
-export { hourlyPrizeObj, faceEssentialsProdObj, mostWantedCombosProdObj, backgroundImageObj, singleObj }
+// localStorage.setItem("topsellers", JSON.stringify(topSellersProdObj));
+// export { hourlyPrizeObj, faceEssentialsProdObj, mostWantedCombosProdObj, backgroundImageObj, singleObj, topSellersProdObj, slide1Obj };
+console.log(hourlyPrizeObj, faceEssentialsProdObj, mostWantedCombosProdObj, backgroundImageObj, singleObj, topSellersProdObj, slide1Obj);
+// document.getElementById("")
+var topSellers = topSellersProdObj;
+var tscontainer = document.getElementById("tscontainer");
+showProd(topSellers, tscontainer);
+
+
+var hourlyPrizeObj = hourlyPrizeObj;
+var afterprize = document.getElementById("afterprize");
+showProd(hourlyPrizeObj, afterprize);
+
+
+var faceEssentialsProdObj = faceEssentialsProdObj;
+var faceEssentials = document.getElementById("faceEssentials");
+showProd(faceEssentialsProdObj, faceEssentials);
+
+var mostWantedCombosProdObj = mostWantedCombosProdObj;
+var comboDisplay = document.getElementById("comboDisplay");
+showProd(mostWantedCombosProdObj, comboDisplay);
+
+var hotSeller_container = document.getElementById("hotSeller_container");
+showProd(topSellers, hotSeller_container);
+
+function showProd(prod, loc) {
+    prod.forEach((el) => {
+        var pdiv = document.createElement("div");
+        pdiv.setAttribute("class", "pdiv");
+
+        var mdiv = document.createElement("div");
+        mdiv.setAttribute("class", "main");
+        var mimg = document.createElement("img")
+        mimg.setAttribute("class", "mi");
+        var ddiv = document.createElement("div");
+        ddiv.setAttribute("class", "disc");
+        var dimg = document.createElement("img")
+        dimg.setAttribute("class", "di");
+        var ndiv = document.createElement("div");
+        ndiv.setAttribute("class", "ndiv");
+        var name = document.createElement("p");
+        name.setAttribute("class", "name");
+        // var prdiv=document.createElement("div");
+        // prdiv.setAttribute("id","prdiv");
+        var cp = document.createElement("span");
+        cp.setAttribute("class", "cp");
+        var mp = document.createElement("span");
+        mp.setAttribute("class", "mp");
+        var btn = document.createElement("button");
+        btn.setAttribute("class", "cartButton")
+        mimg.src = el.imageUrl;
+        mdiv.append(mimg);
+
+        dimg.src = el.discountSticker;
+        ddiv.append(dimg);
+
+        name.innerText = el.name;
+        ndiv.append(name);
+
+        cp.innerText = el.cutPrice;
+        mp.innerText = el.price;
+
+
+        btn.innerText = "ADD TO CART";
+        // console.log(el.imageUrl, el.name, el.price, el.cutPrice);
+        // midv.append(mimg, mdiv, ddiv)
+        pdiv.append(mdiv, ndiv, cp, mp, btn);
+        console.log(pdiv);
+        loc.append(pdiv);
+
+    });
+}
