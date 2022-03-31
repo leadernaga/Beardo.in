@@ -299,7 +299,7 @@ var singleObj = {
 
 // localStorage.setItem("topsellers", JSON.stringify(topSellersProdObj));
 // export { hourlyPrizeObj, faceEssentialsProdObj, mostWantedCombosProdObj, backgroundImageObj, singleObj, topSellersProdObj, slide1Obj };
-console.log(hourlyPrizeObj, faceEssentialsProdObj, mostWantedCombosProdObj, backgroundImageObj, singleObj, topSellersProdObj, slide1Obj);
+//console.log(hourlyPrizeObj, faceEssentialsProdObj, mostWantedCombosProdObj, backgroundImageObj, singleObj, topSellersProdObj, slide1Obj);
 // document.getElementById("")
 var topSellers = topSellersProdObj;
 var tscontainer = document.getElementById("tscontainer");
@@ -324,6 +324,7 @@ showProd(topSellers, hotSeller_container);
 
 function showProd(prod, loc) {
     prod.forEach((el) => {
+        // console.log(el);
         var pdiv = document.createElement("div");
         pdiv.setAttribute("class", "pdiv");
 
@@ -350,8 +351,8 @@ function showProd(prod, loc) {
         mimg.src = el.imageUrl;
         mdiv.append(mimg);
 
-        dimg.src = el.discountSticker;
-        ddiv.append(dimg);
+        // dimg.src = el.discountSticker;
+        // ddiv.append(dimg);
 
         name.innerText = el.name;
         ndiv.append(name);
@@ -361,11 +362,38 @@ function showProd(prod, loc) {
 
 
         btn.innerText = "ADD TO CART";
+
+        // -----------------------------------------------------add to cart addeventlistener--------------------------------------------------------------------------
+
+        btn.addEventListener("click", function() {
+
+            cart_data(el)
+
+            // alert("Added to cart");
+
+        })
+
         // console.log(el.imageUrl, el.name, el.price, el.cutPrice);
         // midv.append(mimg, mdiv, ddiv)
-        pdiv.append(mdiv, ndiv, cp, mp, btn);
-        console.log(pdiv);
+        pdiv.append(mdiv, ndiv, mp, btn);
+        // console.log(pdiv);
         loc.append(pdiv);
 
     });
+}
+// ------------------------------------------------------add to cart-------------------------------------------------------------------------------------
+
+var arr = JSON.parse(localStorage.getItem("cartdata")) || [];
+
+function cart_data(product) {
+
+
+
+    console.log(arr)
+
+    arr.push(product);
+
+    localStorage.setItem("cartdata", JSON.stringify(arr))
+
+    // location.reload()
 }
