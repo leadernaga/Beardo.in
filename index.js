@@ -75,7 +75,7 @@ function showProd(prod, loc) {
         mp.setAttribute("class", "mp");
         var btn = document.createElement("button");
         btn.setAttribute("class", "cartButton")
-        mimg.src = el.imageUrl;
+        mimg.src = el.img_url;
         mdiv.append(mimg);
 
         dimg.src = el.discountSticker;
@@ -146,7 +146,7 @@ function showComboData(prod, count) {
             var btn = document.createElement("button");
             btn.setAttribute("class", "comboCartButton");
 
-            mimg.src = el.imageUrl;
+            mimg.src = el.img_url;
             nameP.innerText = el.name;
             disimg.src = el.discountSticker;
             cp.innerText = el.cutPrice;
