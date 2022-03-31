@@ -242,7 +242,12 @@ function append_data(data) {
         let div28 = document.createElement("div");
         div28.textContent = el.name.toUpperCase();
         div28.id = "div28";
-
+// --------------------------------------------------change cutprices
+        let cp= document.createElement("span");
+        cp.setAttribute("class","cp");
+        cp.innerText=`${el.cutPrice}`;
+       
+// -----------------------------------------------------
         let div05 = document.createElement("div");
         div05.textContent = ` ₹ ${el.price}`;
         div05.id = "div05";
@@ -251,7 +256,7 @@ function append_data(data) {
         div29.textContent = "ADD TO CART";
         div29.id = "div29";
 
-        div04.append(img04, div28, div05, div29);
+        div04.append(img04, div28, div05, div29,cp);
         document.getElementById("all_product").append(div04);
 
         // -----------------------------------------------------add to cart addeventlistener--------------------------------------------------------------------------

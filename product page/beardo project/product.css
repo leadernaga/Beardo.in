@@ -122,5 +122,16 @@ body {
     padding-top: 1%;
     font-weight: 700;
     padding-bottom: 3%;
-    font-size: 100%;
+    font-size: 14px;
+}
+.cp{
+    line-height: 0px;
+    text-decoration: line-through;
+    text-decoration-color: red;
+font-weight: bold;
+    width:50%;
+    margin-top: -51px;
+    font-size: 12px;
+    text-decoration-thickness: 2px;
+   
 }
