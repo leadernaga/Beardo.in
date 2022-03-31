@@ -28,9 +28,9 @@ body {
 }
 
 .main {
-    /* height: 100%; */
-    margin-top: 60px;
-    padding: 10px 50px;
+    height: 100%;
+    margin: 10px;
+    padding: 10px 40px;
 }
 
 #sidebarMenu {
@@ -144,24 +144,6 @@ body {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
 }
 
 #container {
@@ -403,10 +385,6 @@ img {
     width: 100%;
 }
 
-#face {
-    background-image: url(`https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWFmaWEtc2FsZS13ZWJzaXRlLWJhbm5lci0wMi0xMDQ3OC0yMzc5Mi0zMDc1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=`);
-}
-
 #tscontainer {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -440,15 +418,28 @@ img {
 
 .cartButton {
     /* decoration: none; */
-    background-color: rgb(34, 33, 33);
-    border: none;
+    background-color: rgb(49, 49, 49);
     color: white;
+    padding-top: 3%;
+    font-weight: 600;
+    width: 100%;
+    height: 30px;
+    font-size: 100%;
 }
 
 .pdiv {
     background-color: white;
-    margin: 10px;
+    /* margin: 10px; */
     border-radius: 12px;
+    flex-direction: column;
+    height: 400px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    color: black;
+    text-align: center;
+    display: flex;
+    /* font-size: 12px; */
+    border: 0.5px solid rgb(240, 230, 230);
+    font-weight: 600;
 }
 
 .viewButton {
