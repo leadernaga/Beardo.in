@@ -47,87 +47,87 @@ function header(){
     </div>
   </div>
   <style>
-        *{
-            font-family: "Montserrat", sans-serif;
-        }
-      
-      #header1 {
-        
-        background-color: rgb(15, 14, 14);
-        height: 140px;
-        display: flex;
-        width: 100%;
-        color: aliceblue;
-        position: fixed;
-        margin-top: -1%;
-      }
-      #header1_img1 {
-        height: 50px;
-        margin-left: 6%;
-        margin-top: 2.9%;
-      }
-      #header1_product, #header1_concerns{
-         margin-top: .8%; 
-         padding: 3%;
-      }
-      #header1_img2 {
-        height:35px;
-        margin-left: 3%;
-        margin-top: 3.7%;
-      }
-      #header1_img3 {
-        height:35px;
-        margin-left: 3%;
-        margin-top: 3.7%;
-      }
-      #svg1 {
-        color: rgb(66, 62, 62);
-        padding-bottom: 1%;
-       
-       
-      }
-      #svg2 {
-        color: white;
-       margin: 3% ;
-       margin-right:0;
-        width: 2%;
-      }
-      #header1_input{
-           width: 80%;
-           border: 0;
-           margin-top: 2.2%;
-           height: 35px;
-           margin-left: 2%;
-          
-      }
-      #search_input_div {
-        width: 20%;
-        height: 3px;
-        background-color:white;
-        display: flex;
-        padding-bottom: 3%;
-        padding-left: 1%;
-        margin-top: 3%;
-        border-radius: 20px;
-      }
-      #login_inner {
-        border-left: 5px solid white;
-        height: 15px;
-        padding: 1%;
-        margin-top: 3%;
-      }
-      .hover_top:hover{
-        color: rgb(233, 8, 8);
-        border-bottom: 3px solid rgb(219, 11, 11);
-    }
-    #cart_count{
-        color:white;
-         width:20px;
-        height:20px;
-         margin-top:4.2%;
-        margin-right:1%;
-        margin-left:.5%;
-    
+  *{
+    font-family: "Montserrat", sans-serif;
+}
+
+#header1 {
+
+background-color: rgb(15, 14, 14);
+height: 140px;
+display: flex;
+width: 100%;
+color: aliceblue;
+position: fixed;
+margin-top: -1%;
+}
+#header1_img1 {
+height: 50px;
+margin-left: 6%;
+margin-top: 2.9%;
+}
+#header1_product, #header1_concerns{
+ margin-top: .8%; 
+ padding: 3%;
+}
+#header1_img2 {
+height:35px;
+margin-left: 3%;
+margin-top: 3.7%;
+}
+#header1_img3 {
+height:35px;
+margin-left: 3%;
+margin-top: 3.7%;
+}
+#svg1 {
+color: rgb(66, 62, 62);
+padding-bottom: 1%;
+
+
+}
+#svg2 {
+color: white;
+margin: 3% ;
+margin-right:0;
+width: 2%;
+}
+#header1_input{
+   width: 80%;
+   border: 0;
+   margin-top: 2.2%;
+   height: 35px;
+   margin-left: 2%;
+  
+}
+#search_input_div {
+width: 20%;
+height: 3px;
+background-color:white;
+display: flex;
+padding-bottom: 3%;
+padding-left: 1%;
+margin-top: 3%;
+border-radius: 20px;
+}
+#login_inner {
+border-left: 5px solid white;
+height: 15px;
+padding: 1%;
+margin-top: 3%;
+}
+.hover_top:hover{
+color: rgb(233, 8, 8);
+border-bottom: 3px solid rgb(219, 11, 11);
+}
+#cart_count{
+color:white;
+ width:20px;
+height:20px;
+ margin-top:4.2%;
+margin-right:1%;
+margin-left:.5%;
+
     }
     </style>
     `
