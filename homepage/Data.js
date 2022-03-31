@@ -395,5 +395,10 @@ function cart_data(product) {
 
     localStorage.setItem("cartdata", JSON.stringify(arr))
 
-    // location.reload()
+    location.reload()
 }
+// ----------------------------------------------------show cart count---------------------------------------------------------------------------------
+
+
+
+document.querySelector("#cart_count").textContent = `${arr.length}`;
