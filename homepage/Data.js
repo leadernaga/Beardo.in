@@ -350,9 +350,11 @@ function showProd(prod, loc) {
         btn.setAttribute("class", "cartButton")
         mimg.src = el.img_url;
         mdiv.append(mimg);
-
-        // dimg.src = el.discountSticker;
-        // ddiv.append(dimg);
+        mdiv.addEventListener("click", function(el) {
+                window.location.href = './product page/beardo project/product.html';
+            })
+            // dimg.src = el.discountSticker;
+            // ddiv.append(dimg);
 
         name.innerText = el.name;
         ndiv.append(name);
