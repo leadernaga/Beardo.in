@@ -1,0 +1,62 @@
+#div2{
+    display: flex;
+    width: 700px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    border: 1px solid rgb(196, 183, 183);
+}
+#cartimage{
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(156, 151, 151);
+    margin-right: 10px;
+}
+#carttitle{
+    font-size: 20px;
+
+}
+#cartprice{
+    font-size:20px;
+    color: red;
+}
+#div3{
+    margin-left: 10px;
+}
+#div4{
+    display: flex;
+    justify-content: space-evenly;
+}
+#dbtn{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: -30px;
+    font-size: 24px;
+}
+#quantity{
+    margin-left: -30px;
+}
+#ibtn{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: -30px;
+    font-size: 24px;
+}
+#remove{
+    width: 80px;
+    justify-content: end;
+    border: none;
+    background: red;
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+}
+#div5{
+    width: 400px;
+    margin-left: 20px;
+}
+#maindiv{
+    display: flex;
+    justify-content: space-around;
+}

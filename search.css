@@ -1,0 +1,99 @@
+body{
+    background:black
+}
+#mcontainer{
+    margin: auto;
+    width: 650px;
+    height: 2000px;
+    background: white;
+}
+#searchbar{
+    display: flex;
+    padding-bottom: 20px;
+    justify-content:space-around;
+    box-shadow: 0px 8px rgb(237, 234, 234);
+}
+#searchproduct{
+    margin-top: 30px;
+    width: 80%;
+    height: 40px;
+    border: none;
+    margin-left: 20px;
+    background:rgb(208, 207, 207);
+    border-radius: 30px;
+    outline: none;
+}
+#cross{
+    margin-top: 30px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    background:rgb(208, 207, 207);
+    margin-left: -40px;
+    font-size: 24px;
+}
+#browse{
+    width: 100%;
+    background:rgb(208, 207, 207);
+    height: 38px;
+    margin-top: -17px;
+}
+#bc{
+    font-size:24px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#sitems{
+    width: 95%;
+    height: 120px;
+    margin: auto;
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 10px;
+}
+#mdiv{
+    width: 100px;
+    border: 1px solid rgb(213, 210, 210);
+    box-shadow: 3px 3px rgb(213, 210, 210);
+    border-radius: 3px;
+}
+#image{
+    width: 52px;
+    align-items:center;
+}
+#title{
+    font-size: 10px;
+    text-align: center;
+}
+#scrollingdivs{
+--color-red: #fa0002;
+--color-btn-red: #d50000;
+--color-btn-green: #267400;
+--color-white: #fff;
+--font-family: "Montserrat", sans-serif;
+color: #000;
+font-weight: 400;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+ display: flex;
+position: relative; 
+align-items: center;
+padding: 13px 0 16px 0;
+justify-content: space-between;
+background-size: cover;
+background-position: top left;
+background-repeat: no-repeat; 
+height: 280px;
+width: 92%;
+margin: auto;
+background-image: url('https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8td2Vic2l0ZS1zZWFyY2gtcGFnZS1iYWNrZ3JvdW5kLTYwMHgzMDAtMS05MzUyLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NjAwLCJoZWlnaHQiOjEsImZpdCI6Im91dHNpZGUifX19');
+}
+#tp{
+    margin-top: 160px;
+    margin-left: 20px;
+    font-size:24px;
+}
