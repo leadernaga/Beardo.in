@@ -10,8 +10,8 @@
 <body>
     <div id="mcontainer">
         <div id="searchbar">
-            <input type="text" placeholder="Search for a Product" id="searchproduct" onkeypress="showdata()" >
-            <div id="cross">&#10006</div>
+            <input type="text" placeholder="Search for a Product" id="searchproduct"/>
+            <div id="cross" >&#10006</div>
         </div>
         <br>
         <div id="browse">
@@ -29,6 +29,10 @@
 </html>
 
 <script type="module">
+
+
+
+
     import { facedata } from "./components/searchdata.js";
     console.log(facedata);
 
@@ -55,43 +59,84 @@
     }
 
     append(sitems, facedata);
+
+    import { mostWantedCombosProdObj } from "./components/cartdata.js";
+    console.log(mostWantedCombosProdObj);
+
+    let parent1 = document.getElementById('scrollingdivs')
+    const scroll = (scrollingdivs, mostWantedCombosProdObj) => {
+        parent1.innerHTML = null;
+        mostWantedCombosProdObj.forEach((  {imageUrl, name, discountSticker, price, cutPrice} ) => {
+            let div = document.createElement("div");
+        div.setAttribute('id', 'minicontainer');
+
+        let img = document.createElement("img");
+        img.src = imageUrl;
+        img.setAttribute("id", "pic");
+
+
+        let title = document.createElement("h2");
+        title.innerText = name;
+        title.setAttribute('id', 'brand');
+
+
+        let strikeOffPrice = document.createElement("img");
+        strikeOffPrice.src = discountSticker;
+        strikeOffPrice.setAttribute('id', 'disc');
+
+       
+
+        let mainPrice = document.createElement("h5");
+        mainPrice.innerText = price
+        mainPrice.setAttribute('id', 'price');
+
+        let cutOffPrice = document.createElement("h5");
+        cutOffPrice.setAttribute('id', 'cutoffprice');
+        
+
+
+
+        let button = document.createElement("button");
+        button.innerText = `Add To Cart`
+        button.setAttribute('id', 'addtocart');
+        
+        
+        div.append(img, title, cutOffPrice, mainPrice, button);
+        parent1.append(div);
+    }) 
+    }
+    scroll(scrollingdivs, mostWantedCombosProdObj);
+
+
+
+    document.getElementById("#cross").addEventListener("click", locate);
+event.preventDefault();
+function locate(){
+    window.location.href = "./index.html";
+}
 </script>
 
 <script type="module">
 
     import { searcharr } from "./components/searchdata.js";
-    console.log(searcharr);
+    console.log("1",searcharr);
+    
+    var searchresult = document.getElementById('searchproduct').value;
+    console.log(searchresult);
 
-    let parent2 = document.getElementById("mcontainer");
-    const showdata = (mcontainer, searcharr) =>{
-        parent2.innerHTML = null;
 
-        searcharr.forEach(( {imageUrl, name, price, cutPrice} ) => {
-            let productdiv = document.createElement("div");
-            productdiv.setAttribute('id', 'productdiv');
-            
-            let pimage = document.createElement('img');
-            pimage.src = imageUrl;
-            pimage.setAttribute('id', 'pimage');
 
-            let ptitle = document.createElement('h5');
-            ptitle.innerText = name;
-            ptitle.setAttribute('id', 'ptitle');
 
-            let smalldiv = document.createElement('div');
-            smalldiv.setAttribute('id', 'smalldiv');
-
-            let mainprice = document.createElement('p');
-            mainprice.innerText = price;
-            mainprice.setAttribute('id', 'mainprice');
-
-            let cutoffprice = document.createElement('p');
-            cutoffprice.innerText = cutPrice;
-            cutoffprice.setAttribute('id', 'cutoffprice');
-
-            smalldiv.append(cutoffprice, mainprice);
-            productdiv.append(pimage, ptitle, smalldiv);
-        })
-
-    } 
 </script>
+
+
+<!-- array in foreach, 
+elem.name split with space and store it in keywords variable
+before split create an array
+traverse the keywords with comparision of value which we got from search bar
+if value == keyword[a]
+then we will push that obj into array
+when elem is undefined we understand that we serached entire cart array
+then
+we will append the array which we got from matched keywords
+ -->

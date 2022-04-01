@@ -16,8 +16,7 @@
         #cart{
             margin: auto;
             width: 1200px;
-            border: 1px solid rgb(233, 219, 219);
-            margin-top: 100px;
+            margin-top: 160px;
             
         }
         #noitems{
@@ -83,16 +82,34 @@
         #nothing{
             height: 50px;
         }
+        #going{
+            width: 800px;
+            margin-left: 250px;
+        }
+        #main1{
+            width: 700px;
+        }
+        #main2{
+            width: 400px;
+        }
+        #kuii{
+            display: flex;
+        }
     </style>
 </head>
 <body>
     <div id="navbar"></div>
     <br>
     <div id="cart">
-        <h4 id="noitems">No Items In The Cart &#9785</h4>
-        <div><script src="./cart.js"></script></div>
-    </div>
-    <br>
+         <h4 id="noitems">No Items In The Cart &#9785</h4>
+        <img  id="going" src="https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwL3ZpcC1saW1pdGVkLW9mZmVyLWJhbm5lci5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=">
+        <!-- <div id="extra"><script src="./cart.js"></script></div>  -->
+        <div id="kuii">
+            <div id="main1"></div>
+        <div id="main2"></div>
+        </div>
+        <script src="./cart.js"></script>
+     </div>
     
 <div ID="cartdown">
         <h2>RECOMMENDED</h2>
@@ -132,7 +149,7 @@
 
         let img = document.createElement("img");
         img.src = imageUrl;
-        img.width = "200"
+        img.width = "200";
         img.setAttribute("id", "image");
 
 
@@ -176,6 +193,8 @@
         button.style.border = "none";
         button.style.fontSize = "18px";
         button.style.fontWeight = "bold";
+        
+
 
         
         
@@ -189,24 +208,7 @@
     append(recommended, parent);
 
 
-    document.querySelector("#addtocart").addEventListener("click", tocart);
     
-    var cartitems = JSON.parse(localStorage.getItem("cartitemsinpage")) || [];
-    function tocart(event){
-        let productname = document.querySelector("#name");
-        let productimage = document.querySelector("#image");
-        let productprice = document.querySelector("#price");
-        let productsprice = document.querySelector("#cutoffprice");
-    
-        let pobj = {
-            pname: productname,
-            pimage: productimage,
-            pprice: productprice,
-            psprice: productsprice,
-        };
-        cartitems.push(pobj);
-        localStorage.setItem("cartitemsinpage", JSON.stringify(cartitems));
-    }
     
 </script>
 
@@ -290,3 +292,5 @@
 //        cart.append(maindiv);
 //    })
 </script>
+
+

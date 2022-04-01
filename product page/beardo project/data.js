@@ -81,7 +81,7 @@ var combo_collection = [
       "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWVnYS1oZW1wLWNvbWJvLTEyMDB4MTIwMC0zNzM0OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6MjgzLCJmaXQiOiJvdXRzaWRlIn19fQ==",
     name: "Beardo Best Seller - Hemp",
     price: "1199",
-    cutPrice:"₹1392",
+    cutPrice:"1392",
   },
   {
     img_url:
@@ -102,7 +102,7 @@ var combo_collection = [
       "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRyYWdsb3ctZnctdWx0cmFnbG93LWxvdGlvbi1ncmV5LWJhY2tncm91bmQtMzcwOTEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjI4MywiZml0Ijoib3V0c2lkZSJ9fX0=",
     name: "Beardo Ultraglow Face Cream & Ultraglow Facewash Combo",
     price: "599",
-    cutPrice:"₹675",
+    cutPrice:"675",
   },
   {
     img_url:
