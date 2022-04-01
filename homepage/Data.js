@@ -299,7 +299,7 @@ var singleObj = {
 
 // localStorage.setItem("topsellers", JSON.stringify(topSellersProdObj));
 // export { hourlyPrizeObj, faceEssentialsProdObj, mostWantedCombosProdObj, backgroundImageObj, singleObj, topSellersProdObj, slide1Obj };
-//console.log(hourlyPrizeObj, faceEssentialsProdObj, mostWantedCombosProdObj, backgroundImageObj, singleObj, topSellersProdObj, slide1Obj);
+console.log(hourlyPrizeObj, faceEssentialsProdObj, mostWantedCombosProdObj, backgroundImageObj, singleObj, topSellersProdObj, slide1Obj);
 // document.getElementById("")
 var topSellers = topSellersProdObj;
 var tscontainer = document.getElementById("tscontainer");
@@ -340,8 +340,8 @@ function showProd(prod, loc) {
         ndiv.setAttribute("class", "ndiv");
         var name = document.createElement("p");
         name.setAttribute("class", "name");
-        // var prdiv=document.createElement("div");
-        // prdiv.setAttribute("id","prdiv");
+        var prdiv = document.createElement("div");
+        prdiv.setAttribute("id", "prdiv");
         var cp = document.createElement("span");
         cp.setAttribute("class", "cp");
         var mp = document.createElement("span");
@@ -359,9 +359,13 @@ function showProd(prod, loc) {
         name.innerText = el.name;
         ndiv.append(name);
 
-        cp.innerText = el.cutPrice;
-        mp.innerText = el.price;
 
+        cp.innerText = el.cutPrice;
+        // console.log(rupee);
+        // let rupee = el.price[0];
+        let price = el.price.slice(2);
+        // console.log((+price));
+        mp.innerText = price;
 
         btn.innerText = "ADD TO CART";
 
