@@ -769,7 +769,7 @@ let header = () => {
     </nav>
     </div>
     <div class="inner-header__center">
-    <form onsubmit="window.location = '/search/' + encodeURIComponent($('product page/beardo project/product.htmlheaderSearch').val()); return false;">
+    <form onsubmit="window.location = './search.html' + encodeURIComponent($('product page/beardo project/product.htmlheaderSearch').val()); return false;">
     <input type="text" name="search" class="inner-header__center__search" id="headerSearch" autocomplete="off" autocorrect="off" value="" autocapitalize="off" spellcheck="false" placeholder="Search">
     </form>
     </div>

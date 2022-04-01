@@ -32,7 +32,7 @@ function append(arr){
    arr.forEach((elem, index) => {
 
       if(elem.qty == undefined){
-         elem.qty = elem.qty+1;
+         elem.qty = 1;
       }
 
       totalamount += elem.qty*elem.price;
