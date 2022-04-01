@@ -3,14 +3,12 @@
     /* border: 2px solid white; */
     margin: 0;
 }
-#container * {
-    margin: 2px;
-}
 
 html,
 body {
     overflow-x: hidden;
     height: 100%;
+    background-color: black;
 }
 
 * {
@@ -19,9 +17,10 @@ body {
 
 body {
     font-family: sans-serif, Arial, Helvetica, sans-serif;
-    background-color: #fff;
     padding: 0;
     margin: 0;
+    background: rgba(0,0,0,.7);
+
 }
 
 .header {
@@ -157,13 +156,20 @@ body {
 }
 
 #header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
     width: 650px;
     margin: auto;
     background-color: black;
+    top: 0;
     padding: 5px;
+    z-index: 9999;
+}
+
+#inner_container {
+    margin-top: 62px;
 }
 
 .sticky {
@@ -248,10 +254,12 @@ h3 {
 
 #menuscroll {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 90%;
     margin: auto;
-    gap: 1px;
+    padding: 10px 16px;
+    gap: 10px;
+    align-items: center;
 }
 
 #menuscroll>div {
@@ -259,8 +267,14 @@ h3 {
     /* margin-left: 10px; */
     background-color: #850000;
     height: 25px;
+    width: 100px;
     padding: 5px;
     margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 #footersmall {
@@ -413,11 +427,14 @@ img {
 #tscontainer {
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    gap:8px;
+    padding:8px 0;
 }
 
 #afterprize {
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    gap: 8px;
     /* border-radius: 12px; */
 }
 
@@ -429,6 +446,8 @@ img {
 #faceEssentials {
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    gap: 8px;
+    padding:8px 0;
 }
 
 #mostWantedCombos {
@@ -439,11 +458,13 @@ img {
 #hotSeller_container {
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    gap: 8px;
 }
 
 #comboDisplay {
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    gap: 8px;
 }
 
 .cartButton {
