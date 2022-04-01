@@ -10,7 +10,7 @@ function header(){
       <div id="header1_product"  class="hover_top" onclick="window.location.href='./product page/beardo project/product.html'">Products</div>
       
       <div id="header1_concerns"  class="hover_top" onclick="window.location.href='./product page/beardo project/product.html'">Concerns</div>
-      <div id="search_input_div">
+      <div id="search_input_div" onclick="window.location.href='search.html'">
         <svg
           id="svg1"
           xmlns="http://www.w3.org/2000/svg"
