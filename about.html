@@ -7,30 +7,82 @@
     <title>About</title>
    
     <style>
-       
-        #Aboutus{
-          background-color: rgb(119, 116, 116);
-           display: flex;
-          
+        #aboutus{
+            /* border:2px solid blue; */
+            height:1000px; 
         }
-        #h2about{
-                color: rgb(56, 13, 13);
-                margin-top: 200px;
-               text-decoration: underline;
-              
-            }
-       #about_div{
-          width:60% ;
-          margin-left: 0%;
-          margin-top: 150px;
-          padding: 4%;
-            color: rgb(24, 21, 21);
-          }
+        #masai
+        {
+            /* border:2px solid purple; */
+            height:200px;
+            display:flex;
+        }
+        .space{
+            /* border:2px solid rgb(220, 110, 220); */
+            height:100px;
+        }
+        .ima{
+            width:900px;
+            margin-top: 100px;
+        }
+        #about{
+            border:2px solid rgb(23, 157, 70);
+            height:400px;
+            display:flex
 
-        #aboutwho{
-          margin-left: 2%;
-        } 
+        }
+        .lets{
+            border:2px solid rgb(23, 157, 70);
+            height:400px;
+            width:50%
+        }
+        h1{
+            color:purple
+        }
+        #developers{
+            margin-left: 150px;
+            /* border:2px solid red; */
+            display:grid;
+            grid-template-columns: repeat(3,400px);
+            grid-template-rows:repeat(2,100px) ;
+            gap:30px
+        }
+       .mem{
+/*   
+            border:2px solid red; */
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+            display:flex;
             
+
+       }
+       #box{
+           /* border:2px solid black; */
+           margin-left: 30px;
+       }
+       .imgbox{
+           border:2px solid yellowgreen;
+           height:90px;
+           width:100px;
+           border-radius: 50%;
+       }
+       .details{
+           margin-top: 5px;
+           width:300px;
+           margin-left: 6px;
+       }
+       h3{margin-top:  -6px;}
+       .profile{
+           height:90px;
+           width:100px;
+           border-radius: 50%;
+       }
+       b{
+           color:purple
+       }
+       a{
+           font-size: 12px;
+       }
+           .c{color:blueviolet} 
        
     </style>
 </head>
@@ -38,25 +90,100 @@
   
  <!-- header1 -->
  <div id="header1"></div>
+ <div class="space"></div>
+ <div id="aboutus">
+     <div id="masai">
+         <img src="https://th.bing.com/th/id/OIP.UjtZHTiSEIWLqCxnLW4q_gHaCV?pid=ImgDet&w=540&h=170&rs=1">
+         <img  class="ima" src="https://www.linkpicture.com/q/Screenshot-2022-04-01-160532.png">
+     </div>
+     <div id="about">
+        <div class="lets"></div>
+        <div class="lets"></div>
+     </div>
+     <div id="box">
+        <h1>DEVELOPERS</h1>
+     </div>
+     <div id="developers">
+        <div class="mem">
+            <div class="imgbox">
+                <img class="profile" src="https://www.linkpicture.com/q/WhatsApp-Image-2022-04-01-at-17.07.06.jpeg">
+            </div>
+            <div class="details">
+                <h3>
+                    Name:<b>Shubham Varma</b>
+                </h3>
+                <h3>MasaiID:<c class="c">Fw16_409</c></h3>
+           <h3> LinkedinID:<a href="https://www.linkedin.com/in/shubham-verma-78768a157/">Shubham Varma</a></h3> 
+            </div>
+
+            
+        </div>
+        <div class="mem">
+            <div class="imgbox">
+                <img class="profile" src="https://www.linkpicture.com/q/WhatsApp-Image-2022-04-01-at-17.22.05_1.jpeg">
+            </div>
+            <div class="details">
+                <h3>
+                    Name:<b>Arshiya Moin</b>
+                </h3>
+                <h3>MasaiID:<c class="c">Fw16_409</c></h3>
+           <h3> LinkedinID:<a href="https://www.linkedin.com/in/arshiya-moin-b533081b4/">Arshiya Moin</a></h3> 
+            </div>
+        </div>
+        <div class="mem">
+            <div class="imgbox">
+                <img class="profile" src="https://www.linkpicture.com/q/WhatsApp-Image-2022-04-01-at-17.07.06.jpeg">
+            </div>
+            <div class="details">
+                <h3>
+                    Name:<b>Naga</b>
+                </h3>
+                <h3>MasaiID:<c class="c">Fw16_409</c></h3>
+           <h3> LinkedinID:<a href=""></a></h3> 
+            </div>
+        </div>
+        <div class="mem">
+            <div class="imgbox">
+                <img class="profile" src="https://www.linkpicture.com/q/WhatsApp-Image-2022-04-01-at-17.07.06.jpeg">
+            </div>
+            <div class="details">
+                <h3>
+                    Name:<b>DEvesh</b>
+                </h3>
+                <h3>MasaiID:<c class="c">Fw16_409</c></h3>
+           <h3> LinkedinID:<a href=""></a></h3> 
+            </div>
+        </div>
+        <div class="mem">
+            <div class="imgbox">
+                <img class="profile" src="https://www.linkpicture.com/q/WhatsApp-Image-2022-04-01-at-17.07.06.jpeg">
+                
+            </div>
+            <div class="details">
+                <h3>
+                    Name:<b>Swathi</b>
+                </h3>
+                <h3>MasaiID:<c class="c">Fw16_409</c></h3>
+           <h3> LinkedinID:<a href=""></a></h3> 
+            </div>
+        </div>
+        <div class="mem">
+            <div class="imgbox">
+                <img class="profile" src="https://www.linkpicture.com/q/WhatsApp-Image-2022-04-01-at-17.07.06.jpeg">
+            </div>
+            <div class="details">
+                <h3>
+                    Name:<b>Chakravarthi Pasumarthi</b>
+                </h3>
+                <h3>MasaiID:<c class="c">Fw16_409</c></h3>
+           <h3> LinkedinID:<a href="https://www.linkedin.com/in/chakravarthi-pasumarthi-986316226">Chakravarthi Pasumarthi</a></h3> 
+            </div>
+        </div>
+     
+
+ </div>
  
-<div id="Aboutus">
-  
-    <div  id="aboutwho"><h2 id="h2about">Who we are</h2></div>
-    <div id="about_div">
-    Ever wondered why all great men sport beards? We pondered upon this thought and found that men with a greater cause and intellect accept their individuality, are rational and are always open to out-of-the-box ideas (some even come up with them). They take pride in being real and different, just what it takes to be a Beardo. Anybody can grow a beard but not everybody can be a Beardo.
-        The 21st century has given a new meaning to being a man...men may look tough by the exteriors <br>
-        but they're sensitive and empathetic towards everyone and they are not shy to show their softer side. <br>
-         While the fashion and grooming habits of men have changed over the years, a broody bearded look is a <br> 
-         classic and still loved the most. With various bearded looks back in rage, Beardo observed the lack of <br>
-          grooming products for men and therefore decided to change the grooming game for men with exclusive products <br>
-           made using choicest ingredients and a quality controlled manufacturing process. Beardo is not just a beard <br>
-            care expert that only focusses on beard grooming products, we’ve also forayed into men’s skincare range that <br>
-             includes scrub, moisturiser, masks, bodywash, serums et al and a carefully curated hair care range that focuses <br>
-              on hair types and various hair problems that men are prone to. We always come up with breakthrough products which <br>
-               are hassle-free to use and are effective on men. Our primary focus is to change mens’ grooming game and help them <br>
-                become stylish and sexier than ever. Being a true-blue Beardo at heart,<br>
-         we’ll always bring forth products that men don't merely need but truly deserve.
-</div>
+ 
 </div>
 <div id="footer"></div>
 </body>
@@ -64,7 +191,7 @@
 <script type="module" src="./about.js" ></script>
 <script type="module">
    //import header// filename:header1.js//  function name: header()
-   import { header } from "./components/header1.js";
+   import  header  from "./components/header1.js";
   let header1 = document.getElementById("header1");
   header1.innerHTML = header();
   import {footer} from "./components/footer.js"
