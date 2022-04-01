@@ -787,7 +787,7 @@ let header = () => {
     </a>
     </div>
     <div class="inner-header__right__right">
-            <a id="login_btn_on_header" href="index.html">Login <span class="arrow-down"></span></a>
+            <a id="login_btn_on_header" href="login.html">Login <span class="arrow-down"></span></a>
         
     </div>
     </div>
@@ -835,11 +835,11 @@ let footer = () => {
                   <ul>
 
                       <div>
-                          <a href="#"><li>Account </li></a>
-                          <a href="#"><li>Cart </li></a>
+                          <a href="login.html"><li>Account </li></a>
+                          <a href="cart.html"><li>Cart </li></a>
                           <a href="#"><li>Wishlist </li></a>
                           <a href="#"><li>Track Order </li></a>
-                          <a href="#"><li>Beardo Wallet</li></a>
+                          <a href="wallet/wallet.html"><li>Beardo Wallet</li></a>
                       </div>	
                       <div>
                           <a href="#"><li>FAQ's</li></a>
