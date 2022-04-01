@@ -152,7 +152,7 @@ body {
 
 #container {
     background-color: black;
-    width: 650px;
+    width: 640px;
     margin: auto;
 }
 
@@ -204,9 +204,13 @@ body {
     color: white;
 }
 
+#poster {
+    height:fit-content;
+}
+
 #poster>img {
-    height: 400px;
-    width: 650px;
+    height: 430px;
+    width:100%;
 }
 
 h3 {
@@ -267,14 +271,15 @@ h3 {
 }
 
 #footerimgg {
-    margin-left: 275px;
-    height: 50px;
-    width: 120px;
+    margin: 10px 43%;
+    height: 38px;
+    width: 100px;
+    max-width: 100%;
 }
 
 video {
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    margin: auto !important;
 }
 
 #divaddtocart {
@@ -290,6 +295,9 @@ video {
     height: 40px;
 }
 
+.name {
+    min-height: 50px;
+}
 
 .badge {
     position: relative;
@@ -413,6 +421,11 @@ img {
     /* border-radius: 12px; */
 }
 
+#afterprize > div {
+    height:fit-content;
+}
+
+
 #faceEssentials {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -439,9 +452,14 @@ img {
     color: white;
     padding-top: 3%;
     font-weight: 600;
+    max-height: 50px;
     width: 100%;
-    height: 30px;
+    height: 80px !important;
     font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto !important;
 }
 
 .pdiv {
@@ -457,6 +475,7 @@ img {
     /* font-size: 12px; */
     border: 0.5px solid rgb(240, 230, 230);
     font-weight: 600;
+    overflow: hidden;
 }
 
 .viewButton {
@@ -471,11 +490,25 @@ img {
     border-radius: 0;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0 auto;
+    margin: 10px auto !important;
     letter-spacing: 0;
     line-height: 20px;
     margin-top: 8px;
     text-decoration: none;
     border-bottom: 2px solid;
     background-color: black;
+}
+
+#mustash {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    height:50px;
+    gap: 16px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #a8a8a8;
 }
