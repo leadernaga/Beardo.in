@@ -29,7 +29,7 @@ function header() {
       </div>
   
       <img  id="header1_img2" src="https://www.beardo.in/images/vip-text.svg" alt="" />
-      <img  id="header1_img3" src="https://www.beardo.in/images/wallet-text.svg" alt="" onclick="window.location.href='payment.html'" />
+      <img  id="header1_img3" src="https://www.beardo.in/images/wallet-text.svg" alt="" onclick="window.location.href='./wallet/wallet.html'" />
   
       <svg
       onclick="window.location.href='cart.html'"
