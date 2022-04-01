@@ -24,13 +24,6 @@ body {
     margin: 0;
 }
 
-.header {
-    width: 100%;
-    height: 60px;
-    position: fixed;
-    z-index: 10;
-}
-
 .main {
     height: 100%;
     margin: 10px;
@@ -164,6 +157,8 @@ body {
     margin: auto;
     background-color: black;
     padding: 5px;
+    position: fixed;
+    z-index: 999;
 }
 
 .sticky {
@@ -295,10 +290,13 @@ video {
     height: 40px;
 }
 
+<<<<<<< Updated upstream
 .name {
     min-height: 50px;
 }
 
+=======
+>>>>>>> Stashed changes
 .badge {
     position: relative;
     width: 14px;
@@ -499,6 +497,7 @@ img {
     background-color: black;
 }
 
+<<<<<<< Updated upstream
 #mustash {
     display: flex;
     justify-content:space-around;
@@ -611,3 +610,8 @@ img {
     outline: none;
 }
 
+=======
+#poster {
+    padding-top: 70px;
+}
+>>>>>>> Stashed changes
