@@ -287,8 +287,21 @@ video {
     height: 40px;
 }
 
-#cart_count {
-    font-size: 120%;
+
+.badge {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    background: #dc1618;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 9px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5px;
+    right: 26px;
 }
 
 * {
