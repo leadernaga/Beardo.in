@@ -36,11 +36,11 @@ let footer = () => {
                     <ul>
   
                         <div>
-                            <a href="#"><li>Account </li></a>
-                            <a href="#"><li>Cart </li></a>
+                            <a href="login.html"><li>Account </li></a>
+                            <a href="cart.html"><li>Cart </li></a>
                             <a href="#"><li>Wishlist </li></a>
                             <a href="#"><li>Track Order </li></a>
-                            <a href="#"><li>Beardo Wallet</li></a>
+                            <a href="wallet/wallet.html"><li>Beardo Wallet</li></a>
                         </div>	
                         <div>
                             <a href="#"><li>FAQ's</li></a>
@@ -87,4 +87,4 @@ let footer = () => {
           </div>	
       </div>
           </a>`;
-  };
+  };  
