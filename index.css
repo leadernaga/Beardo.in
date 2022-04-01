@@ -3,6 +3,7 @@
     /* border: 2px solid white; */
     margin: 0;
 }
+
 #container * {
     margin: 2px;
 }
@@ -200,12 +201,12 @@ body {
 }
 
 #poster {
-    height:fit-content;
+    height: fit-content;
 }
 
 #poster>img {
     height: 430px;
-    width:100%;
+    width: 100%;
 }
 
 h3 {
@@ -290,13 +291,6 @@ video {
     height: 40px;
 }
 
-<<<<<<< Updated upstream
-.name {
-    min-height: 50px;
-}
-
-=======
->>>>>>> Stashed changes
 .badge {
     position: relative;
     width: 14px;
@@ -419,10 +413,9 @@ img {
     /* border-radius: 12px; */
 }
 
-#afterprize > div {
-    height:fit-content;
+#afterprize>div {
+    height: fit-content;
 }
-
 
 #faceEssentials {
     display: grid;
@@ -457,7 +450,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:auto !important;
+    margin: auto !important;
 }
 
 .pdiv {
@@ -497,12 +490,11 @@ img {
     background-color: black;
 }
 
-<<<<<<< Updated upstream
-#mustash {
+<<<<<<< Updated upstream #mustash {
     display: flex;
-    justify-content:space-around;
-    align-items:center;
-    height:50px;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
     gap: 16px;
 }
 
@@ -514,16 +506,16 @@ img {
 
 .swiper-wrapper {
     display: flex;
-    align-items:center;
+    align-items: center;
     cursor: pointer;
 }
 
 .swiper-slide {
-    width:540px !important;
+    width: 540px !important;
 }
 
 .swiper-slide img {
-    width:100%;
+    width: 100%;
     position: relative;
     left: 16px;
 }
@@ -610,8 +602,8 @@ img {
     outline: none;
 }
 
-=======
-#poster {
+=======#poster {
     padding-top: 70px;
 }
->>>>>>> Stashed changes
+
+>>>>>>>Stashed changes
