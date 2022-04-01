@@ -3,6 +3,13 @@
     /* border: 2px solid white; */
     margin: 0;
 }
+<<<<<<< HEAD
+=======
+
+#container * {
+    margin: 2px;
+}
+>>>>>>> 93de9bec8d2c18f213db2835997107f86d8ac90d
 
 html,
 body {
@@ -158,13 +165,16 @@ body {
     background-color: black;
     top: 0;
     padding: 5px;
+<<<<<<< HEAD
     z-index: 9999;
 }
 
 #inner_container {
     margin-top: 62px;
+=======
     position: fixed;
     z-index: 999;
+>>>>>>> 93de9bec8d2c18f213db2835997107f86d8ac90d
 }
 
 .sticky {
@@ -510,7 +520,7 @@ img {
     background-color: black;
 }
 
-#mustash {
+<<<<<<< Updated upstream #mustash {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -622,7 +632,8 @@ img {
     outline: none;
 }
 
-#poster {
+=======#poster {
     padding-top: 70px;
 }
 
+>>>>>>>Stashed changes
