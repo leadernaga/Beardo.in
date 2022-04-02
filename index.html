@@ -59,7 +59,7 @@
                                         </g>
                                     </svg>
                                     <div class="header-top_menu__login__detail">
-                                                                    <p class="header-top_menu__login__detail__title"><a href="/login">Login</a></p>
+                                            <p class="header-top_menu__login__detail__title"><a href="login.html" id="login_a">Login</a></p>
                                             <p class="header-top_menu__login__detail__wallet">Login to view your Beardo Wallet amount</p>
                                                             </div>
                                 </div>
@@ -579,15 +579,29 @@ var swiper = new Swiper(".SmySwiper", {
 
 <script>
     window.addEventListener( "load", () => {
+    let login_a = document.getElementById("login_a");
     let loggedin = localStorage.getItem("loggedin");
+    let updateted_profile = localStorage.getItem("updateted_profile");
+    let normal_login = JSON.parse(localStorage.getItem("normal_login"));
+    console.log('normal_login:', normal_login)
+    let google_data = JSON.parse(localStorage.getItem("google_data"));
+    let fb_data = JSON.parse(localStorage.getItem("fb_data"));
 
-    // if(loggedin==="true") {
-  
-    //   let login_btn_on_header = document.getElementById("login_btn_on_header");
-      
-  
-    //   login_btn_on_header.innerHTML = 'My account <span class="arrow-down"></span>'
-    // }
+    console.log(login_a)
+    if(loggedin==="true") {
+      if(updateted_profile!==null){
+        login_a.innerText = `${updateted_profile.first_name} ${updateted_profile.last_name}`
+      }
+      if(normal_login!==null){
+        login_a.innerText = `${normal_login.name} ${normal_login.email}`;
+      }
+      if(google_data!==null){
+        login_a.innerText = `${google_data.first_name} ${google_data.last_name}`;
+      }
+      if(fb_data!==null){
+        login_a.innerText = `${fb_data.first_name} ${fb_data.last_name}`;
+      }
+    }
   
   
     let header_Products_arr = [1,2,4,5,10,12,15,18];
