@@ -17,36 +17,42 @@
 }
 #carttitle{
     font-size: 20px;
+    width: 500px;
+    height:40px;
+    justify-content: left;
 
 }
 #cartprice{
     font-size:24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: red;
-    margin-top:-3px;
+    margin-top:-1px;
 }
 #div3{
     margin-left: 10px;
 }
 #div4{
+    width: 500px;
     display: flex;
-    justify-content:space-around
+    justify-content:space-around;
 }
 #dbtn{
     width: 30px;
     height: 30px;
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 36px;
+    margin-left: -1px;
     font-size: 24px;
     border: 1px solid rgb(204, 200, 200);
 }
 #quantity{
-    margin-left: -60px;
+    margin-left: -50px;
 }
 #ibtn{
     width: 30px;
     height: 30px;
     margin-top: 10px;
-    margin-left: -60px;
+    margin-left: -50px;
     font-size: 24px;
     border: 1px solid rgb(204, 200, 200);
 }
@@ -170,7 +176,7 @@
 }
 #divonemore{
     display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     width: 300px;
     height: 40px;
     margin-top: 10px;
@@ -178,9 +184,20 @@
 #cutoff{
     margin-top:1px;
     font-size: 16px;
-    margin-left: -100px;
+    margin-right:50px;
     color:rgb(156, 151, 151);
     text-decoration:line-through;
-
-    
+}
+#divdiv4{
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+#date{
+    margin: auto;
+    color: rgb(242, 56, 56);
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 30px;
 }

@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< Updated upstream
     <title>CART  beardo.in</title>
     <link
     rel="icon"
     href="logo/who_we_are.png"
     type="image/x-icon"
     />
+=======
+    <title>CART PAGE</title>
+>>>>>>> Stashed changes
     <link rel="stylesheet" href="./cart.css">
     <style>
         *{
@@ -34,7 +38,6 @@
             width: 800px;
             height: 500px;
             text-align: center;
-            overflow: scroll;
             display: flex;
 
         }
@@ -73,9 +76,8 @@
         }
         #cartdown{
             margin: auto;
-            width: 950px;
+            width: 1100px;
             height: 600px;
-            border: 1px solid rgb(233, 229, 229);
         }
         h2{
             text-align: center;
@@ -88,8 +90,8 @@
             height: 50px;
         }
         #going{
-            width: 800px;
-            margin-left: 250px;
+            width: 400px;
+            margin-left: 420px;
         }
         #main1{
             width: 700px;
@@ -99,6 +101,9 @@
         }
         #kuii{
             display: flex;
+        }
+        #cutoffprice{
+            text-decoration: line-through;
         }
     </style>
 </head>
@@ -131,12 +136,10 @@
 
 <script type="module">
     import header from "./components/header1.js";
-    console.log(header);
     let cartHeader = document.getElementById('navbar');
     cartHeader.innerHTML = header();
 
     import { mostWantedCombosProdObj } from "./components/cartdata.js";
-    console.log(mostWantedCombosProdObj);
     
     let parent = document.getElementById("recommended");
 
@@ -213,89 +216,27 @@
     append(recommended, parent);
 
 
-    
+    var date = document.getElementById("check");
+    date.addEventListener("keydown", function(e){
+        if(e.code == "Enter"){
+            validate(e);
+        }
+        window.location.href="https://www.beardo.in/cart";
+    });
+
+    function validate(e){
+        let expected = document.getElementById('nothing');
+        expected = null;
+        const d = new Date();
+
+        let date = document.createElement('div');
+        date.innerText = d;
+        date.setAttribute('id', 'date');
+        nothing.append(date);
+    }
     
 </script>
 
-<script>
-//    var arr = JSON.parse(localStorage.getItem("cartdata")) || [];
-//    console.log(arr);
-//    arr.forEach(( {img_url, name, price} ) => {
 
-//     let maindiv = document.createElement("div");
-//     maindiv.setAttribute('id', 'maindiv');
-
-
-//        let div2 = document.createElement("div");
-//        div2.setAttribute('id', 'div2');
-       
-//        let image = document.createElement("img");
-//        image.src = img_url;
-//        image.setAttribute('id', 'cartimage')
-
-//        let div3 = document.createElement("div");
-//        div3.setAttribute('id', 'div3');
-//        let cptitle = document.createElement("h2");
-//        cptitle.innerText = name;
-//        cptitle.setAttribute('id', 'carttitle')
-
-//        let cpprice = document.createElement("h5");
-//        cpprice.innerText = price;
-//        cpprice.setAttribute('id', 'cartprice');
-
-//        let div4 = document.createElement("div");
-//        div4.setAttribute('id', 'div4');
-       
-//        let dbtn = document.createElement('button');
-//        dbtn.innerText = "-";
-//        dbtn.setAttribute('id', 'dbtn');
-
-//        let quantity = document.createElement("p");
-//        quantity.innerText = "QTY";
-//        quantity.setAttribute('id', 'quantity');
-
-//        let ibtn = document.createElement("button");
-//        ibtn.innerText = "+";
-//        ibtn.setAttribute('id', 'ibtn');
-
-//        let remove = document.createElement('button');
-//        remove.innerText = "REMOVE";
-//        remove.setAttribute('id', 'remove');
-
-//        let div5 = document.createElement("div");
-//        div5.setAttribute('id', 'div5');
-
-//        let coupon = document.createElement("select");
-//        coupon.innerText = `50% DISCOUNT COUPON`;
-//        coupon.setAttribute('id', 'coupon');
-
-//        let pricedetails = document.createElement("p");
-//        pricedetails.innerText = `PRICE DETAILS`;
-//        pricedetails.setAttribute('id', 'pricedetails');
-
-//        let subtotal = document.createElement('div');
-//        subtotal.innerText = `SubTotal`;
-//        subtotal.setAttribute('id', 'subtotal');
-
-//        let dcharges = document.createElement('div');
-//        dcharges.innerText = `Delivery Charges`;
-//        dcharges.setAttribute('id', 'dcharges');
-
-//        let youpay = document.createElement('div');
-//        youpay.innerText = `You Pay`;
-//        youpay.setAttribute('id', 'youpay');
-
-//        let placeorder = document.createElement('button');
-//        placeorder.innerText = `Place Order`;
-//        placeorder.setAttribute('id', 'placeorder');
-
-//     div5.append(coupon, pricedetails, subtotal, dcharges, youpay, placeorder);
-//        div4.append(dbtn, quantity, ibtn, remove)
-//        div3.append(cptitle, cpprice, div4);
-//        div2.append(image, div3);
-//        maindiv.append(div2, div5);
-//        cart.append(maindiv);
-//    })
-</script>
 
 

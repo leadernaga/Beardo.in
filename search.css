@@ -33,6 +33,7 @@ body{
     background:rgb(208, 207, 207);
     margin-left: -40px;
     font-size: 24px;
+    padding-top: 3px;
 }
 #browse{
     width: 100%;
@@ -47,9 +48,9 @@ body{
 }
 #sitems{
     width: 95%;
-    height: 120px;
+    height: 150px;
     margin: auto;
-    overflow: scroll;
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-gap: 10px;
@@ -59,9 +60,16 @@ body{
     border: 1px solid rgb(213, 210, 210);
     box-shadow: 3px 3px rgb(213, 210, 210);
     border-radius: 3px;
+    position:relative;
+    margin: auto;
+}
+@keyframes mymove {
+    from{left:800px;}
+    left{left:300px;}
 }
 #image{
-    width: 52px;
+    width: 80px;
+    margin: auto;
     align-items:center;
 }
 #title{
@@ -72,11 +80,10 @@ body{
     width: 92%;
     margin: auto;
 background-image: url('https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8td2Vic2l0ZS1zZWFyY2gtcGFnZS1iYWNrZ3JvdW5kLTYwMHgzMDAtMS05MzUyLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NjAwLCJoZWlnaHQiOjEsImZpdCI6Im91dHNpZGUifX19');
-border: 1px solid red;
 display: flex;
-flex-flow:row;
+justify-content:space-evenly;
 overflow: hidden;
-animation: 3s ease-in 1s infinite reverse both running slidein;
+margin-bottom: 60px;
 
 
 }
@@ -88,25 +95,22 @@ animation: 3s ease-in 1s infinite reverse both running slidein;
 }
 #minicontainer{
     margin-top: 10px;
-    width:150px;
-    height: 200px;
-    margin-left: 80px;
+    width:110px;
+    height: 230px;
+    margin-left: 10px;
     margin-bottom: 10px;
     background: rgb(200, 195, 195);
-    animation: 3s ease-in 1s infinite reverse both running slidein;
+    position: relative;
+    animation: mymove 5s infinite;
 
     
 }
-@keyframes slide {
-    0% {
-        transform: translate3d(0, 0, 0)
-    }
-    100%{
-        transform: translate3d(-1500px, 0, 0)
-    }
+@keyframes mymove {
+   from{left: 0px;}
+   to{left: 150px;}
 }
 #pic{
-    width: 80px;
+    width: 110px;
 }
 #brand{
     font-size: 10px;
@@ -126,4 +130,40 @@ animation: 3s ease-in 1s infinite reverse both running slidein;
     background: red;
     border: none;
     color: white;
+}
+#kichh{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+#mycontainer{
+    height: 400px;
+    width: 200px;
+    grid-template-columns: repeat(3, 1fr);
+    background: white;
+    border-radius: 3px;
+    margin: auto;
+}
+#myimage{
+    width: 100%;
+    margin: auto;
+}
+#myname{
+    font-size:14px;
+    text-align: center;
+}
+#myprice{
+    text-align: center;
+    font-size: 20px;
+    color: red;
+}
+#myaddtocart{
+    margin-top: 21px;
+    height: 40px;
+    width: 100%;
+    background: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight:bold
 }

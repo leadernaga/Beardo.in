@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< Updated upstream
     <title>Search Beardo.in</title>
+=======
+    <title>SEARCH YOUR PRODUCT</title>
+>>>>>>> Stashed changes
     <link rel="stylesheet" href="./search.css">
     <link
     rel="icon"
@@ -12,8 +16,9 @@
     type="image/x-icon"
     />
 </head>
-<body>
+<body id="comeedy">
     <div id="mcontainer">
+        <div id="kichh"></div>
         <div id="searchbar">
             <input type="text" placeholder="Search for a Product" id="searchproduct"/>
             <div id="cross" >&#10006</div>
@@ -36,7 +41,9 @@
 <script type="module">
 
 
-
+document.getElementById("cross").addEventListener("click", function(){
+    window.location.href="./index.html";
+})
 
     import { facedata } from "./components/searchdata.js";
     console.log(facedata);
@@ -69,9 +76,11 @@
     console.log(mostWantedCombosProdObj);
 
     let parent1 = document.getElementById('scrollingdivs')
+
     const scroll = (scrollingdivs, mostWantedCombosProdObj) => {
         parent1.innerHTML = null;
         mostWantedCombosProdObj.forEach((  {imageUrl, name, discountSticker, price, cutPrice} ) => {
+
             let div = document.createElement("div");
         div.setAttribute('id', 'minicontainer');
 
@@ -102,7 +111,7 @@
 
 
         let button = document.createElement("button");
-        button.innerText = `Add To Cart`
+        button.innerText = `ADD TO CART`
         button.setAttribute('id', 'addtocart');
         
         
@@ -114,34 +123,73 @@
 
 
 
-    document.getElementById("#cross").addEventListener("click", locate);
-event.preventDefault();
-function locate(){
-    window.location.href = "./index.html";
-}
+
 </script>
 
 <script type="module">
-
     import { searcharr } from "./components/searchdata.js";
-    console.log("1",searcharr);
+
+    import {hourlyPrizeObj, faceEssentialsProdObj, mostWantedCombosProdObj1, backgroundImageObj, singleObj, topSellersProdObj, slide1Obj} from "./components/searchdata.js";
+    var products = document.getElementById("searchproduct");
+    products.addEventListener("keydown", function(e){
+        if(e.code == "Enter"){
+            validate(e);
+        }
+    });
+
+
+    document.getElementById("mdiv").addEventListener("click", function(hourlyPrizeObj){
+        validate(hourlyPrizeObj);
+    });
+
+    document.getElementById("sitems").addEventListener("click", function(hourlyPrizeObj){
+        validate(hourlyPrizeObj);
+    })
+
     
-    var searchresult = document.getElementById('searchproduct').value;
-    console.log(searchresult);
+    function validate(){
+        let parent = document.getElementById("browse");
+        parent.innerHTML = null;
+        kichh.style.background= "black"
+        searcharr.forEach(( { imageUrl, name, cutPrice, price }) =>{
 
+            let div = document.createElement("div");
+            div.setAttribute('id', 'mycontainer');
 
+            let img = document.createElement("img");
+            img.src = imageUrl;
+            img.setAttribute("id", "myimage");
 
+            let title = document.createElement("h2");
+            title.innerText = name;
+            title.setAttribute('id', 'myname');
+
+            let mainPrice = document.createElement("h5");
+            mainPrice.innerText = price;
+            mainPrice.setAttribute('id', 'myprice');
+
+            let cutOffPrice = document.createElement("h5");
+            cutOffPrice.innerText = cutPrice;
+            cutOffPrice.setAttribute('id', 'mycutoffprice');
+
+            let button = document.createElement("button");
+            button.innerText = `ADD TO CART`
+        button.setAttribute('id', 'myaddtocart');
+       
+
+            div.append(img, title, mainPrice, button);
+            kichh.append(div);
+        }) 
+    }
+
+    var arr = JSON.parse(localStorage.getItem("cartdata")) || [];
+    console.log(arr);
+    
+    function cartdata(cartdata){
+        arr.push(cartdata)
+    localStorage.setItem("cartdata", JSON.stringify(arr));
+    location.reload();
+    }
 
 </script>
 
-
-<!-- array in foreach, 
-elem.name split with space and store it in keywords variable
-before split create an array
-traverse the keywords with comparision of value which we got from search bar
-if value == keyword[a]
-then we will push that obj into array
-when elem is undefined we understand that we serached entire cart array
-then
-we will append the array which we got from matched keywords
- -->

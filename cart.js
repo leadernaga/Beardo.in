@@ -4,14 +4,8 @@
 var arr = JSON.parse(localStorage.getItem("cartdata")) || [];
 var number = 0;
 var count = 0;
-   console.log(arr);
    let length = arr.length;
-   console.log(length);
-   //  totalamount = 0;
-   //    arr.forEach(({price}) =>{
-   //       totalamount = totalamount+Number(price);
-   //    });
-   // console.log(totalamount);
+   
 
    var totalamount = 0;
 
@@ -24,6 +18,8 @@ var count = 0;
 
 
 
+   let main1 =document.getElementById("main1");
+   let main2 = document.getElementById("main2");
 
    
    let div5 = document.createElement("div");
@@ -36,16 +32,14 @@ function append(arr){
       }
 
       totalamount += elem.qty*elem.price;
-      console.log("jaz",elem.qty);
-      console.log("p", elem.price)
+
 
       div5.innerHTML = null;
       side(totalamount);
     let maindiv = document.createElement("div");
     maindiv.setAttribute('id', 'maindiv');
 
-   //  let onemorediv = document.createElement('div');
-   //  onemorediv.setAttribute('id', 'onemorediv');
+   
 
        let div2 = document.createElement("div");
        div2.setAttribute('id', 'div2');
@@ -74,21 +68,27 @@ function append(arr){
 
        let div4 = document.createElement("div");
        div4.setAttribute('id', 'div4');
+
+       let divdiv5 = document.createElement('div');
+       divdiv5.setAttribute('id', 'divdiv5');
+
+       let divdiv4 = document.createElement('div');
+       divdiv4.setAttribute('id', 'divdiv4');
        
        let dbtn = document.createElement('button');
        dbtn.innerText = "-";
        dbtn.setAttribute('id', 'dbtn');
        dbtn.addEventListener("click", function(){
           
-          if(elem.qty > 0){
+          if(elem.qty >=1){
             elem.qty -= 1;
             totalamount = 0;
           }
           localStorage.setItem("cartdata", JSON.stringify(arr));
           document.getElementById('cart').innerHTML = null;
+          location.reload();
           append(arr);
           side();
-          location.reload();
        })
 
        let quantity = document.createElement("p");
@@ -103,6 +103,7 @@ function append(arr){
          totalamount = 0;
          localStorage.setItem("cartdata", JSON.stringify(arr));
          document.getElementById('cart').innerHTML = null;
+         location.reload();
          append(arr);
          side();
        })
@@ -114,51 +115,17 @@ function append(arr){
          arr.splice(index, 1)
           localStorage.setItem("cartdata", JSON.stringify(arr));
           document.getElementById('cart').innerHTML = null;
+          location.reload();
           append(arr);
           side();
+          location.reload();
        })
 
-   //     let div5 = document.createElement("div");
-   //     div5.setAttribute('id', 'div5');
-
-   //     let coupon = document.createElement("select");
-   //     coupon.innerText = `50% DISCOUNT COUPON`;
-   //     coupon.setAttribute('id', 'coupon');
-
-   //     let pricedetails = document.createElement("p");
-   //     pricedetails.innerText = `PRICE DETAILS (${length} ITEMS)`;
-   //     pricedetails.setAttribute('id', 'pricedetails');
-
-   //     let subtotal = document.createElement('div');
-   //     subtotal.innerText = `SubTotal`;
-   //     subtotal.setAttribute('id', 'subtotal');
-   //     let subtotaldiv = document.createElement('div');
-   //     subtotaldiv.innerText = `${totalamount}.00`;
-   //     subtotaldiv.setAttribute('id', 'subtotaldiv')
-   //     subtotal.append(subtotaldiv);
-
-   //     let dcharges = document.createElement('div');
-   //     dcharges.innerText = `Delivery Charges`;
-   //     dcharges.setAttribute('id', 'dcharges');
-   //     let dchargesdiv = document.createElement('div');
-   //     dchargesdiv.innerText = "FREE";
-   //     dchargesdiv.setAttribute('id', 'dchargesdiv')
-   //     dcharges.append(dchargesdiv);
-
-   //     let youpay = document.createElement('div');
-   //     youpay.innerText = `You Pay`;
-   //     youpay.setAttribute('id', 'youpay');
-   //     let youpaydiv = document.createElement('div');
-   //     youpaydiv.innerText = `${totalamount}.00`;
-   //     youpaydiv.setAttribute('id', 'youpaydiv')
-   //     youpay.append(youpaydiv);
-
-   //     let placeorder = document.createElement('button');
-   //     placeorder.innerText = `PLACE ORDER`;
-   //     placeorder.setAttribute('id', 'placeorder');
-
-   //  div5.append(coupon, pricedetails, subtotal, dcharges, youpay, placeorder);
-       div4.append(dbtn, quantity, ibtn, remove)
+   
+   
+   divdiv5.append(remove);
+   divdiv4.append(dbtn, quantity, ibtn)
+       div4.append(divdiv4, divdiv5);
        divonemore.append(cpprice, cutoff)
        div3.append(cptitle, divonemore, div4);
        div2.append(image, div3);
@@ -183,7 +150,7 @@ function side(totalamount){
        offerdiv.setAttribute('id', 'offerdiv');
        offer.append(offerdiv);
        offerdiv.addEventListener('click', function(){
-          total = totalamount-500;
+          totalamount = totalamount-500;
           console.log("totalamount", totalamount)
           offerdiv.style.color = 'green';
           alert(`500/- DISCOUNT ADDED`)
@@ -222,45 +189,9 @@ function side(totalamount){
        placeorder.innerText = `PLACE ORDER`;
        placeorder.setAttribute('id', 'placeorder');
        placeorder.addEventListener('click', function(){
-
+          window.location.href="./index.html"
        })
 
     div5.append(coupon, offer, pricedetails, subtotal, dcharges, youpay, placeorder);
 }
-   // let empty = document.createElement('div');
-   // empty.setAttribute('id', 'empty');
-   // empty.innerText = `Empty Your Cart`;
-
    
-
-
-
-
-   // let div5 = document.createElement("div");
-   //     div5.setAttribute('id', 'div5');
-
-   //     let coupon = document.createElement("select");
-   //     coupon.innerText = `50% DISCOUNT COUPON`;
-   //     coupon.setAttribute('id', 'coupon');
-
-   //     let pricedetails = document.createElement("p");
-   //     pricedetails.innerText = `PRICE DETAILS`;
-   //     pricedetails.setAttribute('id', 'pricedetails');
-
-   //     let subtotal = document.createElement('div');
-   //     subtotal.innerText = `SubTotal`;
-   //     subtotal.setAttribute('id', 'subtotal');
-
-   //     let dcharges = document.createElement('div');
-   //     dcharges.innerText = `Delivery Charges`;
-   //     dcharges.setAttribute('id', 'dcharges');
-
-   //     let youpay = document.createElement('div');
-   //     youpay.innerText = `You Pay`;
-   //     youpay.setAttribute('id', 'youpay');
-
-   //     let placeorder = document.createElement('button');
-   //     placeorder.innerText = `Place Order`;
-   //     placeorder.setAttribute('id', 'placeorder');
-
-   //  div5.append(coupon, pricedetails, subtotal, dcharges, youpay, placeorder);
