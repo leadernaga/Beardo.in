@@ -96,6 +96,9 @@ window.addEventListener("load", () => {
         orders.removeAttribute("class",);
         wallet.setAttribute("class","newaccount__head__links__active");
         all_cat_div.innerHTML = wallet_data();
+        let wallet_amount = localStorage.getItem("wallet_balance");
+        let wallet_number = document.querySelector(".newaccount__wallet__head__right__amount");
+        wallet_number.innerText = `₹${wallet_amount}`
     })
     
     
