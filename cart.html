@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CART PAGE</title>
+    <title>CART beardo.in</title>
+    <link rel="icon" href="logo/who_we_are.png" type="image/x-icon" />
     <link rel="stylesheet" href="./cart.css">
     <style>
-        *{
+        * {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        #navbar{
+        
+        #navbar {
             margin-left: -8px;
         }
-        #cart{
+        
+        #cart {
             margin: auto;
             width: 1200px;
             margin-top: 160px;
-            
         }
-        #noitems{
-            text-align:center; 
-            font-size: 32px; 
-            color: rgb(182, 179, 179); 
+        
+        #noitems {
+            text-align: center;
+            font-size: 32px;
+            color: rgb(182, 179, 179);
         }
-        #recommended{
+        
+        #recommended {
             margin: auto;
             width: 800px;
             height: 500px;
             text-align: center;
             display: flex;
-
         }
-        #deliverycheck{
+        
+        #deliverycheck {
             font-size: 16px;
             margin: auto;
             margin-top: 50px;
@@ -41,88 +46,105 @@
             justify-content: space-between;
             background: rgb(233, 229, 229);
         }
-        #check{
+        
+        #check {
             width: 300px;
             font-size: 16px;
             outline: rgb(233, 229, 229);
         }
-        #header1_input{
+        
+        #header1_input {
             outline: none;
             font-size: 20px;
         }
-        #search_input_div{
+        
+        #search_input_div {
             margin-right: 100px;
         }
-        .productDiv{
+        
+        .productDiv {
             width: 250px;
             height: 90%;
             border: 1px solid red;
         }
-        .productImage{
+        
+        .productImage {
             width: 20%;
         }
-        .addtocartbutton{
+        
+        .addtocartbutton {
             background: red;
             color: white;
         }
-        #cartdown{
+        
+        #cartdown {
             margin: auto;
             width: 1100px;
             height: 600px;
         }
-        h2{
+        
+        h2 {
             text-align: center;
             font-size: 28px;
         }
-        #dummy{
+        
+        #dummy {
             color: rgb(92, 88, 88);
         }
-        #nothing{
+        
+        #nothing {
             height: 50px;
         }
-        #going{
+        
+        #going {
             width: 400px;
             margin-left: 420px;
         }
-        #main1{
+        
+        #main1 {
             width: 700px;
         }
-        #main2{
+        
+        #main2 {
             width: 400px;
         }
-        #kuii{
+        
+        #kuii {
             display: flex;
         }
-        #cutoffprice{
+        
+        #cutoffprice {
             text-decoration: line-through;
         }
     </style>
 </head>
+
 <body>
     <div id="navbar"></div>
     <br>
     <div id="cart">
-         <h4 id="noitems">No Items In The Cart &#9785</h4>
-        <img  id="going" src="https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwL3ZpcC1saW1pdGVkLW9mZmVyLWJhbm5lci5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=">
+        <h4 id="noitems">No Items In The Cart &#9785</h4>
+        <img id="going" src="https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwL3ZpcC1saW1pdGVkLW9mZmVyLWJhbm5lci5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=">
         <!-- <div id="extra"><script src="./cart.js"></script></div>  -->
         <div id="kuii">
             <div id="main1"></div>
-        <div id="main2"></div>
+            <div id="main2"></div>
         </div>
         <script src="./cart.js"></script>
-     </div>
-    
-<div ID="cartdown">
+    </div>
+
+    <div ID="cartdown">
         <h2>RECOMMENDED</h2>
         <div id="recommended"></div>
-    </div> 
+    </div>
 
     <div id="deliverycheck">
         <p style="margin-left: 10px; color: rgb(167, 163, 163)">Estimated Delivery Date</p>
-        <input id="check" type="number", placeholder="Pincode" />
+        <input id="check" type="number" , placeholder="Pincode" />
     </div>
     <div id="nothing"></div>
-    </body>
+</body>
+
 </html>
 
 <script type="module">
@@ -227,7 +249,3 @@
     }
     
 </script>
-
-
-
-
