@@ -64,5 +64,11 @@ window.addEventListener( "load", () => {
 
       let badge = document.querySelector(".badge");
       badge.innerText = cartdata.length;
+
+      let headerSearch = document.querySelector("#headerSearch");
+
+      headerSearch.addEventListener("click", () => {
+          window.location.href = "search.html";
+      })
   
   })

@@ -10,8 +10,12 @@
     href="logo/who_we_are.png"
     type="image/x-icon"
     />
-   
+   <link rel="stylesheet" href="header and footer/header.css">
+   <link rel="stylesheet" href="header and footer/footer.css">
     <style>
+        body{
+            background-color: black;
+        }
         #aboutus{
             /* border:2px solid blue; */
             height:1000px; 
@@ -58,8 +62,6 @@
             box-shadow: rgba(11, 163, 223, 0.1) 0px 8px 24px, rgba(84, 84, 187, 0.1) 0px 16px 56px, rgba(19, 19, 200, 0.1) 0px 24px 80px;
             border-radius: 10px;
             display:flex;
-            
-
        }
        #box{
            /* border:2px solid black; */
@@ -198,11 +200,11 @@
 <script type="module" src="./about.js" ></script>
 <script type="module">
    //import header// filename:header1.js//  function name: header()
-   import  header  from "./components/header1.js";
+  import { header_new }  from "./header and footer/header_new.js";
   let header1 = document.getElementById("header1");
-  header1.innerHTML = header();
-  import {footer} from "./components/footer.js"
-    var foot=document.getElementById("footer");
-    foot.innerHTML=footer()
+  header1.innerHTML = header_new();
+  import { footer_new } from "./header and footer/footer_new.js"
+  var foot=document.getElementById("footer");
+  foot.innerHTML=footer_new();
     
 </script>
