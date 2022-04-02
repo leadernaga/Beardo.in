@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout Adress</title>
     <link rel="stylesheet" href="./checkout.css">
+    <link rel="stylesheet" href="../header and footer/header.css">
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
@@ -14,7 +15,7 @@
             width:500px;
             height:150px;
             margin:auto;
-            margin-top:150px;
+            margin-top:50px;
         }
         #header1{
     position: fixed;
@@ -81,10 +82,13 @@
 .two{
     border-bottom: 3px solid gray;
 }
+#navbar1{
+    background-color:black;
+}
     </style>
 </head>
 <body>
-    <div id="nav"></div>
+    <div id="navbar1"></div>
     <img src="https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoiZnJlZS1za3UtMjVtbC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=" id="abvimg" alt="">
 
 <div id="toptitle">
@@ -251,8 +255,13 @@
 </body>
 </html>
 <script type="module">
-import header from "../components/header1.js";
-document.getElementById("nav").innerHTML=header();
+ import { header_new } from "../header and footer/header_new.js"
+let header1 = document.getElementById("navbar1");
+header1.innerHTML = header_new();
+
+// console.log(header_new)
+
+
 var one=document.getElementById("lbone");
 var two=document.getElementById("lbtwo");
 var three=document.getElementById("lbthree");
@@ -332,8 +341,14 @@ arr.forEach((elm)=>{
     youpay.innerText="₹ "+total;
 })
 
-import {footer} from "../components/footer.js"
+// import {footer} from "../components/footer.js"
 
-document.getElementById("footer").innerHTML=footer()
+// document.getElementById("footer").innerHTML=footer()
+
+
+
+document.getElementById("continue").addEventListener("click",()=>{
+    window.location.href="./OrderSummery.html"
+})
 
 </script>

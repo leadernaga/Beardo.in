@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../header and footer/header.css">
+
     <link
     rel="icon"
     href="logo/who_we_are.png"
     type="image/x-icon"
     />
+    <link rel="stylesheet" href="../header and footer/footer.css">
     <title>Wallet .Beardo.in</title>
     <style>
         *{
@@ -193,18 +196,17 @@
 /* #adtowallet{
     display:none;
 } */
+#navbar{
+    background-color: black;
+}
 
     
     </style>
 </head>
 <body>
     
-<<<<<<< Updated upstream
-    <!-- <div id="header1"></div> -->
-=======
     <div id="navbar"></div>
     <div id="main">
->>>>>>> Stashed changes
 <img src="https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tc2t5LWJhbm5lci0xNjAwLXgtMTIwLTA0LTM1MzEzLTEtMzg3MDguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjEsImZpdCI6Im91dHNpZGUifX19" alt="" id="spin">
 <img src="https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoiYmVhcmRvLXdhbGxldC1leHBsYWluZXItMS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=" alt="" id="src">
 
@@ -348,20 +350,17 @@
 </body>
 </html>
 <script type="module">
-<<<<<<< Updated upstream
-     import  header  from "./components/header1.js";
-  let header1 = document.getElementById("header1");
-  header1.innerHTML = header();
-  import {footer} from "./components/footer.js"
-    var foot=document.getElementById("footer");
-    foot.innerHTML=footer()
-=======
-    import header from "../components/header1.js";
-    import {footer} from "../components/footer.js";
+    import { header_new } from "../header and footer/header_new.js"
+let header1 = document.getElementById("navbar");
+header1.innerHTML = header_new()
+import { footer_new } from "../header and footer/footer_new.js";
+
+console.log(footer_new)
+
+
     
-    document.getElementById("navbar").innerHTML=header()
-    document.getElementById("footer").innerHTML=footer();
->>>>>>> Stashed changes
+    // document.getElementById("navbar").innerHTML=header()
+    document.getElementById("footer").innerHTML=footer_new();
 
    var btn=document.getElementsByClassName("btn");
    var answer=document.getElementsByClassName("answers");

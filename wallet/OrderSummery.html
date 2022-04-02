@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./summery.css">
+    <link rel="stylesheet" href="../header and footer/header.css">
+    <script src="../header and footer/header_new.js"></script>
     <style>
          #abvimg{
             display: block;
             width:500px;
             height:150px;
             margin:auto;
-            margin-top:150px;
+            margin-top:50px;
         }
               #header1{
     position: fixed;
@@ -123,7 +125,7 @@
     </style>
 </head>
 <body>
-    <div id="nav"></div>
+    <div id="navbar"></div>
     <img src="https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoiZnJlZS1za3UtMjVtbC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=" id="abvimg" alt="">
 
     <div id="toptitle">
@@ -241,9 +243,10 @@
 </body>
 </html>
 <script type="module">
-    import header from "../components/header1.js";
-    document.getElementById("nav").innerHTML=header();
-    import {footer} from "../components/footer.js"
+ import { header_new } from "../header and footer/header_new.js"
+let header1 = document.getElementById("navbar");
+header1.innerHTML = header_new()
+
 
 // document.getElementById("footer").innerHTML=footer();
 var addresses=JSON.parse(localStorage.getItem("address_data")) || [];
@@ -363,7 +366,9 @@ document.getElementById("switch").addEventListener("click",()=>{
     }
 })
 
-
+document.getElementById("continue").addEventListener("click",()=>{
+    window.location.href="./Payment.html"
+})
 
 
 

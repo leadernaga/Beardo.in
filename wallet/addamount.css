@@ -16,7 +16,7 @@
     padding: 0 30px;
     margin:auto;
     border-radius: 20px;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 #adamount>div{
     
@@ -87,4 +87,7 @@ button{
     display:block;
     margin: auto;
     margin-top:30px;
+}
+#navbar{
+    background-color:black;
 }

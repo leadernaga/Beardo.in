@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../header and footer/header.css">
     <title>Payment</title>
     <link rel="stylesheet" href="./payment.css">
     <style>
@@ -12,7 +13,7 @@
             width:500px;
             height:150px;
             margin:auto;
-            margin-top:150px;
+            margin-top:50px;
         }
               #header1{
     position: fixed;
@@ -92,7 +93,7 @@
 </head>
 <body>
     
-    <div id="nav"></div>
+    <div id="navbar"></div>
     <img src="https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoiZnJlZS1za3UtMjVtbC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=" id="abvimg" alt="">
 
     <div id="toptitle">
@@ -189,7 +190,7 @@
                 <div id="left-right">
 <div id="upiappear">
     <h4>UPI</h4>
-    <div>
+    <div id="upiimg">
         <img src="https://pay.google.com/about/static_kcs/images/logos/footer-logo.svg" alt="">
         <img src="https://assetscdn1.paytm.com/frontendcommonweb/11272962.svg" alt="">
         <img src="https://www.logo.wine/a/logo/PhonePe/PhonePe-Logo.wine.svg" alt="">
@@ -204,12 +205,51 @@
                 </div>
             </div>
         </div>
+        <div id="right">
+            <div id="totalpay">
+                <h4 id="items">PRICE DETAILS (0 ITEM)</h4>
+                <div>
+                    <h3>subtotal</h3>
+                    <h3 id="subtotal"></h3>
+                
+                </div>
+                <div>
+                    <h3>Delevery Charges</h3>
+                    <h3>Free</h3>
+                </div>
+                <div>
+                    <h1>You Pay</h1>
+                    <h1 id="youpay">0</h1>
+                </div>
+                
+                <!-- <button id="continue">CONTINUE</button> -->
+                    </div>
+            
+        </div>
     </div>
 
 </body>
 </html>
 <script type="module">
-    import header from "../components/header1.js";
-    document.getElementById("nav").innerHTML=header()
+   import { header_new } from "../header and footer/header_new.js"
+let header1 = document.getElementById("navbar");
+header1.innerHTML = header_new()
+
+var cartarr=JSON.parse(localStorage.getItem("cartdata")) || [];
+var total=localStorage.getItem("total")
+
+document.getElementById("items").innerText=`PRICE DETAILS (${cartarr.length} ITEM)`;
+document.getElementById("subtotal").innerText="₹ "+total;
+document.getElementById("youpay").innerText="₹ "+total;
+
+
+document.getElementById("paynow").addEventListener("click",()=>{
+    window.location.href="successfull.html"
+});
+document.getElementById("login_btn_on_header").addEventListener("click",()=>{
+    window.location.href="successfull.html"
+});
+
+
 
 </script>
