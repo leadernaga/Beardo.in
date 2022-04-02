@@ -67,6 +67,7 @@
             background-image: url("https://www.beardo.in/images/bg-image.jpg");
        color: white;
        padding: 20px;
+       margin: 50px 0;
         }
         .btn{
             display: flex;
@@ -115,13 +116,95 @@
   float: right;
   margin-left: 5px;
 }
+#footera{
+    height: 350px;
+    line-height: 30px;
+    padding: 50px;
+}
+#footer_form{
+    /* height:50px; */
+    padding: 1px;
+    
+}
+#header1{
+    position: fixed;
+    top:0;
+    right: 0;
+    left:0;
+
+}
+#bal{
+    height: 300px;
+    display: none;
+}
+
+#bal>h4{
+    color: black;
+    font-weight:800;
+    margin-top:130px;
+    padding:20px;
+}
+#bal span{
+    color:red;
+}
+#bal>div{
+    
+    margin:auto;
+    text-align: center;
+    width:600px;
+    height:100px;
+    /* padding:100px;  */
+    /* border-bottom: 0.5px  #898989; */
+    box-shadow: 0px 1px 0px rgb(0 0 0 / 20%);
+
+    display: grid;
+    
+}
+#balance{
+    padding:10px;
+    font-family: sans-serif;
+    
+    
+}
+#bal>div>h3{
+    font-size: 12px;
+    font-weight: bold;
+    color: #898989;
+    opacity: 0.5;
+}
+#bal>div>h1{
+    font-size: 38px;
+    font-weight: bold;
+}
+#adtowallet>button{
+    width:200px;
+    height:60px;
+    background-color:#2c2c2c;
+    color:white;
+    font-weight: 800;
+    font-family: sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 80%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+/* #adtowallet{
+    display:none;
+} */
 
     
     </style>
 </head>
 <body>
     
+<<<<<<< Updated upstream
     <!-- <div id="header1"></div> -->
+=======
+    <div id="navbar"></div>
+    <div id="main">
+>>>>>>> Stashed changes
 <img src="https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tc2t5LWJhbm5lci0xNjAwLXgtMTIwLTA0LTM1MzEzLTEtMzg3MDguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjEsImZpdCI6Im91dHNpZGUifX19" alt="" id="spin">
 <img src="https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoiYmVhcmRvLXdhbGxldC1leHBsYWluZXItMS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=" alt="" id="src">
 
@@ -247,17 +330,38 @@
 
     </div>
 </div>
+</div>
+
+<div id="bal">
+    <h4>Home  / <span>Beardo Wallet</span></h4>
+    
+  <div>
+      <h3>TOTAL BALANCE</h3>
+      <h1 id="balance"></h1>
+  </div>
+
+
+</div>
+<div id="adtowallet"><button>Add To Wallet</button></div>
 
 <div id="footer"></div>
 </body>
 </html>
 <script type="module">
+<<<<<<< Updated upstream
      import  header  from "./components/header1.js";
   let header1 = document.getElementById("header1");
   header1.innerHTML = header();
   import {footer} from "./components/footer.js"
     var foot=document.getElementById("footer");
     foot.innerHTML=footer()
+=======
+    import header from "../components/header1.js";
+    import {footer} from "../components/footer.js";
+    
+    document.getElementById("navbar").innerHTML=header()
+    document.getElementById("footer").innerHTML=footer();
+>>>>>>> Stashed changes
 
    var btn=document.getElementsByClassName("btn");
    var answer=document.getElementsByClassName("answers");
@@ -280,6 +384,25 @@
             document.querySelectorAll("h2")[1].innerHTML="-";
         }
         // console.log(answer[0])
+   })
+   var login =localStorage.getItem("logined")
+   var main=document.getElementById("main");
+   var bal=document.getElementById("bal");
+   var adtowallet=document.getElementById("adtowallet");
+   if(login==true){
+    main.style.display="block";
+    // adtowallet.style.display="block";
+
+   }else{
+bal.style.display="block";
+main.style.display="none";
+// adtowallet.style.display="none";
+   }
+   var balance=localStorage.getItem("wallet_balance")||0;
+   document.getElementById("balance").innerText="₹"+balance;
+   
+   document.getElementById("adtowallet").addEventListener("click",()=>{
+       window.location.href="./addamount.html";
    })
    
     
