@@ -351,7 +351,7 @@ function showProd(prod, loc) {
         mimg.src = el.img_url;
         mdiv.append(mimg);
         mdiv.addEventListener("click", function(el) {
-                window.location.href = './product page/beardo project/product.html';
+                window.location.href = 'product.html';
             })
             // dimg.src = el.discountSticker;
             // ddiv.append(dimg);
