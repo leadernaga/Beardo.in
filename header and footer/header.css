@@ -3,6 +3,35 @@
   font-family: "Montserrat", sans-serif;
 }
 
+a, button, input[type=submit], input[type=button] {
+  cursor: pointer;
+}
+
+input, select, textarea, button, a {
+  outline: none;
+  appearance: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+a {
+  text-decoration: none;
+}
+a {
+  transition: all .5s ease;
+  text-decoration: none;
+}
+p {
+  margin: 0;
+  text-align: left;
+}
+h1, h2, h5, p, ul {
+  color: #000;
+}
+body, form, h1, h2, h5, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
 #header {
   display: block;
   position: -webkit-sticky;
