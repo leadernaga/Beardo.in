@@ -7,9 +7,9 @@ function header() {
         id="header1_img1"
         src="https://www.beardo.in/images/logo-white.png"
       />
-      <div id="header1_product"  class="hover_top" onclick="window.location.href='./product page/beardo project/product.html'">Products</div>
+      <div id="header1_product"  class="hover_top" onclick="window.location.href='./product.html'">Products</div>
       
-      <div id="header1_concerns"  class="hover_top" onclick="window.location.href='./product page/beardo project/product.html'">Concerns</div>
+      <div id="header1_concerns"  class="hover_top" onclick="window.location.href='./product.html'">Concerns</div>
       <div id="search_input_div" onclick="window.location.href='search.html'">
         <svg
           id="svg1"
