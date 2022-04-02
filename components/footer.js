@@ -7,22 +7,22 @@ function footer(){
   
   <div>
       <div id="footer_div21">PRODUCTS</div>
-    <p onclick="window.location.href='https:\\www.beardo.in/categories/combos'">Combos</p>
-    <p  onclick="window.location.href='https:\\www.beardo.in/categories/beard'">Beard</p>
-    <p  onclick="window.location.href='https:\\www.beardo.in/categories/face'">Face</p>
-    <p  onclick="window.location.href='https:\\www.beardo.in/categories/hair'">Hair</p>
-    <p  onclick="window.location.href='https:\\www.beardo.in/categories/body'">Body</p>
+    <p onclick="window.location.href='./product page/beardo project/product.html'">Combos</p>
+    <p  onclick="window.location.href='./product page/beardo project/product.html'">Beard</p>
+    <p  onclick="window.location.href='./product page/beardo project/product.html'">Face</p>
+    <p  onclick="window.location.href='./product page/beardo project/product.html'">Hair</p>
+    <p  onclick="window.location.href='./product page/beardo project/product.htmly'">Body</p>
   </div>
   <div id="footer_div11">
-    <p  onclick="window.location.href='https:\\www.beardo.in/categories/fragrance'">Fragrance</p>
-    <p  onclick="window.location.href='https:\\www.beardo.in/categories/beardo'">Beardo</p>
-    <p  onclick="window.location.href='https:\\www.beardo.in/categories/fashion'">Fashion</p>
-    <p  onclick="window.location.href='https:\\www.beardo.in/categories/trimmers'">Trimmers</p>
+    <p  onclick="window.location.href='./product page/beardo project/product.html'">Fragrance</p>
+    <p  onclick="window.location.href='./product page/beardo project/product.html'">Beardo</p>
+    <p  onclick="window.location.href='./product page/beardo project/product.html'">Fashion</p>
+    <p  onclick="window.location.href='./product page/beardo project/product.html'">Trimmers</p>
   </div>
   <div id="footer_div11">
-    <p  onclick="window.location.href='https:\\www.beardo.in/about-us'">Who we are</p>
+    <p  onclick="window.location.href='./about.html'">Who we are</p>
     <p  onclick="window.location.href='https:\\www.beardo.in/community'">Community</p>
-    <p  onclick="window.location.href='https:\\www.beardo.in/categories/blog'">Blog</p>
+    <p  onclick="window.location.href='./about.html'">Blog</p>
     <p  onclick="window.location.href='https:\\www.beardo.in/beardothon'">Beardothon</p>
     <p  onclick="window.location.href='https:\\www.beardo.in/contact-us'">Contact us</p>
   </div>
@@ -34,11 +34,11 @@ function footer(){
   
   <div >
       <div id="footer_div22">ORDER</div>
-    <p  onclick="window.location.href='https:\\www.beardo.in/login'">Account</p>
-    <p  onclick="window.location.href='https:\\www.beardo.in/cart'">Cart</p>
-    <p  onclick="window.location.href='https:\\www.www.beardo.in/login'">Wishlist</p>
+    <p  onclick="window.location.href='login.html'">Account</p>
+    <p  onclick="window.location.href='cart.html">Cart</p>
+    <p  onclick="window.location.href='login.html">Wishlist</p>
     <p  onclick="window.location.href='https:\\www.beardo.in/track-order'">Track Order</p>
-    <p  onclick="window.location.href='https:\\www.beardo.in/wallet'">Beardo Wallet</p>
+    <p  onclick="window.location.href='./wallet/wallet.html'">Beardo Wallet</p>
   </div>
   <div id="footer_div11">
     <p  onclick="window.location.href='https:\\www.beardo.in/faqs'">FAQ's</p>
