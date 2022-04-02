@@ -1,6 +1,6 @@
 #adamount{
     width:20%;
-    height:500px;
+    height:550px;
     margin:auto;
     background-color: black;
     color:white;
@@ -33,6 +33,7 @@ input{
     border-radius:10px;
     font-size:18px;
     padding:0 10px;
+    
 }
 #card{
     display:block;
@@ -44,8 +45,9 @@ input{
 
 
 #exp>input,#cvv>input{
-    width:100px;
+    width:120px;
     height:30px;
+    border-radius: 10px;
 }
 button{
     width:200px;
@@ -80,6 +82,7 @@ button{
     height:50px;
     display:block;
     margin: auto;
+    border-radius: 10px;
 }
 #otp>button{
     width:120px;
@@ -87,7 +90,17 @@ button{
     display:block;
     margin: auto;
     margin-top:30px;
+    border-radius: 10px;
+    margin-top:30px;
 }
 #navbar{
     background-color:black;
+}
+#Eamount,h3+input{
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+#paynow{
+    border-radius: 10px;
+    width:100%;
 }
