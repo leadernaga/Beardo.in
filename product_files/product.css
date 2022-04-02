@@ -159,6 +159,10 @@ body {
     text-decoration-thickness: 2px;
 }
 
+#header1 {
+    max-width: 100%;
+}
+
 @media (min-width:800px) and (max-width: 1160px) {
     #all_product {
         display: grid;
