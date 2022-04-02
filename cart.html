@@ -1,47 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< Updated upstream
-    <title>CART  beardo.in</title>
-    <link
-    rel="icon"
-    href="logo/who_we_are.png"
-    type="image/x-icon"
-    />
-=======
     <title>CART PAGE</title>
->>>>>>> Stashed changes
     <link rel="stylesheet" href="./cart.css">
     <style>
-        *{
+        * {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        #navbar{
+        
+        #navbar {
             margin-left: -8px;
         }
-        #cart{
+        
+        #cart {
             margin: auto;
             width: 1200px;
             margin-top: 160px;
-            
         }
-        #noitems{
-            text-align:center; 
-            font-size: 32px; 
-            color: rgb(182, 179, 179); 
+        
+        #noitems {
+            text-align: center;
+            font-size: 32px;
+            color: rgb(182, 179, 179);
         }
-        #recommended{
+        
+        #recommended {
             margin: auto;
             width: 800px;
             height: 500px;
             text-align: center;
             display: flex;
-
         }
-        #deliverycheck{
+        
+        #deliverycheck {
             font-size: 16px;
             margin: auto;
             margin-top: 50px;
@@ -50,193 +45,117 @@
             justify-content: space-between;
             background: rgb(233, 229, 229);
         }
-        #check{
+        
+        #check {
             width: 300px;
             font-size: 16px;
             outline: rgb(233, 229, 229);
         }
-        #header1_input{
+        
+        #header1_input {
             outline: none;
             font-size: 20px;
         }
-        #search_input_div{
+        
+        #search_input_div {
             margin-right: 100px;
         }
-        .productDiv{
+        
+        .productDiv {
             width: 250px;
             height: 90%;
             border: 1px solid red;
         }
-        .productImage{
+        
+        .productImage {
             width: 20%;
         }
-        .addtocartbutton{
+        
+        .addtocartbutton {
             background: red;
             color: white;
         }
-        #cartdown{
+        
+        #cartdown {
             margin: auto;
             width: 1100px;
             height: 600px;
         }
-        h2{
+        
+        h2 {
             text-align: center;
             font-size: 28px;
         }
-        #dummy{
+        
+        #dummy {
             color: rgb(92, 88, 88);
         }
-        #nothing{
+        
+        #nothing {
             height: 50px;
         }
-        #going{
+        
+        #going {
             width: 400px;
             margin-left: 420px;
         }
-        #main1{
+        
+        #main1 {
             width: 700px;
         }
-        #main2{
+        
+        #main2 {
             width: 400px;
         }
-        #kuii{
+        
+        #kuii {
             display: flex;
         }
-        #cutoffprice{
+        
+        #cutoffprice {
             text-decoration: line-through;
         }
     </style>
 </head>
+
 <body>
     <div id="navbar"></div>
     <br>
     <div id="cart">
-         <h4 id="noitems">No Items In The Cart &#9785</h4>
-        <img  id="going" src="https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwL3ZpcC1saW1pdGVkLW9mZmVyLWJhbm5lci5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=">
+        <h4 id="noitems">No Items In The Cart &#9785</h4>
+        <img id="going" src="https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwL3ZpcC1saW1pdGVkLW9mZmVyLWJhbm5lci5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=">
         <!-- <div id="extra"><script src="./cart.js"></script></div>  -->
         <div id="kuii">
             <div id="main1"></div>
-        <div id="main2"></div>
+            <div id="main2"></div>
         </div>
         <script src="./cart.js"></script>
-     </div>
-    
-<div ID="cartdown">
+    </div>
+
+    <div ID="cartdown">
         <h2>RECOMMENDED</h2>
         <div id="recommended"></div>
-    </div> 
+    </div>
 
     <div id="deliverycheck">
         <p style="margin-left: 10px; color: rgb(167, 163, 163)">Estimated Delivery Date</p>
-        <input id="check" type="number", placeholder="Pincode" />
+        <input id="check" type="number" , placeholder="Pincode" />
     </div>
     <div id="nothing"></div>
-    </body>
+</body>
+
 </html>
 
 <script type="module">
-    import header from "./components/header1.js";
-    let cartHeader = document.getElementById('navbar');
-    cartHeader.innerHTML = header();
+    import header from "./components/header1.js"; let cartHeader = document.getElementById('navbar'); cartHeader.innerHTML = header(); import { mostWantedCombosProdObj } from "./components/cartdata.js"; let parent = document.getElementById("recommended");
+    const append = (recommended, parent) => { parent.innerHTML = null; mostWantedCombosProdObj.forEach(( { imageUrl, name, discountSticker, price, cutPrice } ) =>{ let div = document.createElement("div"); div.style.marginRight = "18px"; div.style.marginTop
+    = "10px"; div.style.backgroundColor = "white"; div.style.borderRadius = "5px"; div.style.border = "1px solid rgb(233, 229, 229)"; div.setAttribute('id', 'minicontainer'); let img = document.createElement("img"); img.src = imageUrl; img.width = "200";
+    img.setAttribute("id", "image"); let title = document.createElement("h2"); title.innerText = name; title.style.fontSize = "16px"; title.style.color = "rgb(168, 161, 161)"; title.setAttribute('id', 'name'); let strikeOffPrice = document.createElement("img");
+    strikeOffPrice.src = discountSticker; strikeOffPrice.setAttribute('id', 'disc'); let mainPrice = document.createElement("h5"); mainPrice.innerText = price; mainPrice.style.color = "red"; mainPrice.style.fontSize= "24px"; mainPrice.setAttribute('id',
+    'price'); let cutOffPrice = document.createElement("h5"); cutOffPrice.innerText = cutPrice; cutOffPrice.style.color = "rgb(92, 88, 88)"; cutOffPrice.style.fontSize = "18px"; cutOffPrice.setAttribute('id', 'cutoffprice'); let button = document.createElement("button");
+    button.setAttribute('id', 'addtocart'); button.innerText = `ADD TO CART`; button.style.backgroundColor = "red"; button.style.color = "white"; button.style.width = "100%"; button.style.height = "50px"; button.style.borderRadius = "2px"; button.style.fontStretch
+    = "20px"; button.style.border = "none"; button.style.fontSize = "18px"; button.style.fontWeight = "bold"; div.append(img, title, cutOffPrice, mainPrice, button); parent.append(div); }) } append(recommended, parent); var date = document.getElementById("check");
+    date.addEventListener("keydown", function(e){ if(e.code == "Enter"){ validate(e); } window.location.href="https://www.beardo.in/cart"; }); function validate(e){ let expected = document.getElementById('nothing'); expected = null; const d = new Date();
+    let date = document.createElement('div'); date.innerText = d; date.setAttribute('id', 'date'); nothing.append(date); }
 
-    import { mostWantedCombosProdObj } from "./components/cartdata.js";
-    
-    let parent = document.getElementById("recommended");
-
-    const append = (recommended, parent) => {
-    parent.innerHTML = null;
-
-    mostWantedCombosProdObj.forEach(( {  imageUrl, name, discountSticker, price, cutPrice } ) =>{
-        let div = document.createElement("div");
-        div.style.marginRight = "18px";
-        div.style.marginTop = "10px";
-        div.style.backgroundColor = "white";
-        div.style.borderRadius = "5px";
-        div.style.border = "1px solid rgb(233, 229, 229)";
-        div.setAttribute('id', 'minicontainer');
-
-        let img = document.createElement("img");
-        img.src = imageUrl;
-        img.width = "200";
-        img.setAttribute("id", "image");
-
-
-        let title = document.createElement("h2");
-        title.innerText = name;
-        title.style.fontSize = "16px";
-        title.style.color = "rgb(168, 161, 161)";
-        title.setAttribute('id', 'name');
-
-
-        let strikeOffPrice = document.createElement("img");
-        strikeOffPrice.src = discountSticker;
-        strikeOffPrice.setAttribute('id', 'disc');
-
-       
-
-        let mainPrice = document.createElement("h5");
-        mainPrice.innerText = price;
-        mainPrice.style.color = "red";
-        mainPrice.style.fontSize= "24px";
-        mainPrice.setAttribute('id', 'price');
-
-        let cutOffPrice = document.createElement("h5");
-        cutOffPrice.innerText = cutPrice;
-        cutOffPrice.style.color = "rgb(92, 88, 88)";
-        cutOffPrice.style.fontSize = "18px";
-        cutOffPrice.setAttribute('id', 'cutoffprice');
-        
-
-
-
-        let button = document.createElement("button");
-        button.setAttribute('id', 'addtocart');
-        button.innerText = `ADD TO CART`;
-        button.style.backgroundColor = "red";
-        button.style.color = "white";
-        button.style.width = "100%";
-        button.style.height = "50px";
-        button.style.borderRadius = "2px";
-        button.style.fontStretch = "20px";
-        button.style.border = "none";
-        button.style.fontSize = "18px";
-        button.style.fontWeight = "bold";
-        
-
-
-        
-        
-        
-        div.append(img, title, cutOffPrice, mainPrice, button);
-        parent.append(div);
-    }) 
-    
-}
-
-    append(recommended, parent);
-
-
-    var date = document.getElementById("check");
-    date.addEventListener("keydown", function(e){
-        if(e.code == "Enter"){
-            validate(e);
-        }
-        window.location.href="https://www.beardo.in/cart";
-    });
-
-    function validate(e){
-        let expected = document.getElementById('nothing');
-        expected = null;
-        const d = new Date();
-
-        let date = document.createElement('div');
-        date.innerText = d;
-        date.setAttribute('id', 'date');
-        nothing.append(date);
-    }
-    
 </script>
-
-
-
-
