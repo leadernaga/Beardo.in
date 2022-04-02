@@ -19,7 +19,7 @@
             padding: 0px;
         }
         #spin{
-            margin-top: 125px;
+            margin-top: 0px;
         }
         #spin+img{
             display: block;
@@ -70,7 +70,10 @@
             background-image: url("https://www.beardo.in/images/bg-image.jpg");
        color: white;
        padding: 20px;
-       margin: 50px 0;
+       /* margin: 50px 0; */
+       /* display: grid; */
+       /* justify-content: center; */
+       margin: 50px auto;
         }
         .btn{
             display: flex;
@@ -84,6 +87,7 @@
             box-shadow: inset 0px -20px 20px 6px #00000038;
             padding: 0 10px;
             align-items: center;
+            margin: 10px auto;
             
 
 
@@ -193,9 +197,9 @@
     margin-bottom: 20px;
     cursor: pointer;
 }
-/* #adtowallet{
+#adtowallet{
     display:none;
-} */
+}
 #navbar{
     background-color: black;
 }
@@ -344,7 +348,7 @@
 
 
 </div>
-<div id="adtowallet"><button>Add To Wallet</button></div>
+<div id="adtowallet"><button id="adbtn">Add To Wallet</button></div>
 
 <div id="footer"></div>
 </body>
@@ -355,7 +359,7 @@ let header1 = document.getElementById("navbar");
 header1.innerHTML = header_new()
 import { footer_new } from "../header and footer/footer_new.js";
 
-console.log(footer_new)
+// console.log(footer_new)
 
 
     
@@ -388,19 +392,20 @@ console.log(footer_new)
    var main=document.getElementById("main");
    var bal=document.getElementById("bal");
    var adtowallet=document.getElementById("adtowallet");
-   if(login==true){
+   if(login==undefined || login==false){
     main.style.display="block";
-    // adtowallet.style.display="block";
+    
 
    }else{
 bal.style.display="block";
 main.style.display="none";
+adtowallet.style.display="block";
 // adtowallet.style.display="none";
    }
    var balance=localStorage.getItem("wallet_balance")||0;
    document.getElementById("balance").innerText="₹"+balance;
    
-   document.getElementById("adtowallet").addEventListener("click",()=>{
+   document.getElementById("adbtn").addEventListener("click",()=>{
        window.location.href="./addamount.html";
    })
    

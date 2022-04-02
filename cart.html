@@ -4,16 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< Updated upstream
     <title>CART  beardo.in</title>
     <link
     rel="icon"
     href="logo/who_we_are.png"
     type="image/x-icon"
     />
-=======
-    <title>CART PAGE</title>
->>>>>>> Stashed changes
     <link rel="stylesheet" href="./cart.css">
     <style>
         *{
@@ -43,7 +39,7 @@
         }
         #deliverycheck{
             font-size: 16px;
-            margin-left: 200px;
+            margin:auto;
             margin-top: 50px;
             width: 700px;
             display: flex;
@@ -67,12 +63,6 @@
         -webkit-appearance: none;
         margin: 0;
         }
-<<<<<<< Updated upstream
-        #check{
-            width: 300px;
-            font-size: 16px;
-            outline: rgb(233, 229, 229);
-=======
         
         #check {
             border: none;
@@ -87,14 +77,10 @@
 
         span {
             color: #c80504;
-            font-size: 12px;
+            font-size: 17px;
             font-weight: 700;
-            position: absolute;
-            right: -60px;
-            top: 80%;
             transform: translateY(-50%);
             cursor: pointer;
->>>>>>> Stashed changes
         }
         #header1_input{
             outline: none;
@@ -149,7 +135,7 @@
 
         #after_pincode {
             font-size: 16px;
-            margin-left: 200px;
+            margin:auto;
             margin-top: 50px;
             width: 700px;
             display: block;
@@ -182,16 +168,11 @@
     </div> 
 
     <div id="deliverycheck">
-<<<<<<< Updated upstream
-        <p style="margin-left: 10px; color: rgb(167, 163, 163)">Estimated Delivery Date</p>
-        <input id="check" type="number", placeholder="Pincode" />
-=======
         <p style="margin-left: 10px; color: #000">Estimated Delivery Date</p>
         <div id="pincode_div">
             <input id="check" type="number" , placeholder="Pincode" />
             <span>check</span>
         </div>
->>>>>>> Stashed changes
     </div>
     <div id="nothing"></div>
     </body>
@@ -298,13 +279,6 @@
         nothing.append(date);
     }
     
-<<<<<<< Updated upstream
-</script>
-
-
-
-
-=======
     let address_data = JSON.parse(localStorage.getItem("address_data"));
 
     let deliverycheck = document.getElementById("deliverycheck");
@@ -352,4 +326,3 @@
         deliverycheck.append(upper_div,lowerdiv);
     }
 </script>
->>>>>>> Stashed changes

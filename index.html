@@ -625,9 +625,12 @@
         console.log('normal_login:', normal_login)
         let google_data = JSON.parse(localStorage.getItem("google_data"));
         let fb_data = JSON.parse(localStorage.getItem("fb_data"));
+        let wallet_p = document.querySelector(".header-top_menu__login__detail__wallet");
+        let wallet_balance = localStorage.getItem("wallet_balance");
 
         console.log(login_a)
         if (loggedin === "true") {
+            wallet_p.innerText = `Beardo Wallet Amount: Rs ${wallet_balance}`;
             if (updateted_profile !== null) {
                 login_a.innerText = `${updateted_profile.first_name} ${updateted_profile.last_name}`
             }
