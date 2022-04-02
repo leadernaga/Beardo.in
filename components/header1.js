@@ -1,4 +1,4 @@
-function header(){
+function header() {
     return `
     <div id="header_fixed">
     <div id="header1">
@@ -28,10 +28,6 @@ function header(){
       </div>
       <img  id="header1_img2" src="https://www.beardo.in/images/vip-text.svg" alt="" />
       <img  id="header1_img3" src="https://www.beardo.in/images/wallet-text.svg" alt="" onclick="window.location.href='./wallet/wallet.html'" />
-<<<<<<< Updated upstream
-    <img id="header1_img3" src="https://www.beardo.in/images/home-2018-05-cart.png" alt="" onclick="window.location.href='./cart.html'"/>
-       
-=======
       <svg
       onclick="window.location.href='cart.html'"
         id="svg2"
@@ -44,7 +40,6 @@ function header(){
         <path
           d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"
         />
->>>>>>> Stashed changes
       </svg>
       <div id="cart_count">0</div>
       <div id="login_inner" class="hover_top" onclick="window.location.href='./login.html'">Login</div>
@@ -136,6 +131,6 @@ function header(){
     }
     </style>
     `
-  }
-  
-  export default header
+}
+
+export default header

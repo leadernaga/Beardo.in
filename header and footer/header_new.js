@@ -362,7 +362,7 @@ let header_new = () => {
       </nav>
       </div>
       <div class="inner-header__center">
-      <form onsubmit="window.location = '/search/' + encodeURIComponent($('product page/beardo project/product.htmlheaderSearch').val()); return false;">
+      <form onclick="window.location = 'search.html' ">
       <input type="text" name="search" class="inner-header__center__search" id="headerSearch" autocomplete="off" autocorrect="off" value="" autocapitalize="off" spellcheck="false" placeholder="Search">
       </form>
       </div>
@@ -388,7 +388,7 @@ let header_new = () => {
       <div class="thunder-ads">
     <!--- <a href="index.html" id="add_img"><img id="skybanner" src="https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tc2t5LWJhbm5lci0xNjAwLXgtMTIwLTA0LTM1MzEzLTEtMzg3MDguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjEsImZpdCI6Im91dHNpZGUifX19" class="lazy thunder-ads-desktop loaded" data-was-processed="true"></a> -->
     </div>`;
-  };
-    
-  
+};
+
+
 export { header_new }
