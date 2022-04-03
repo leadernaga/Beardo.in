@@ -188,19 +188,6 @@ function side(totalamount) {
     let coupon = document.createElement("div");
     coupon.innerText = `CART DETAILS`;
     coupon.setAttribute('id', 'coupon');
-    let offer = document.createElement('div');
-    offer.setAttribute('id', 'offer');
-    offer.innerText = `Click to Add 500/- OFF`;
-    let offerdiv = document.createElement('div');
-    offerdiv.innerText = `\u2611`;
-    offerdiv.setAttribute('id', 'offerdiv');
-    offer.append(offerdiv);
-    offerdiv.addEventListener('click', function() {
-        totalamount = totalamount - 500;
-        console.log("totalamount", totalamount)
-        offerdiv.style.color = 'green';
-        alert(`500/- DISCOUNT ADDED`)
-    })
 
     let pricedetails = document.createElement("p");
     pricedetails.innerText = `PRICE DETAILS (${length} ITEMS)`;
@@ -238,6 +225,6 @@ function side(totalamount) {
         window.location.href = "checkout.html"
     })
 
-    div5.append(coupon, offer, pricedetails, subtotal, dcharges, youpay, placeorder);
+    div5.append(coupon, pricedetails, subtotal, dcharges, youpay, placeorder);
 }
 // >>>>>>> b27c3398a6e2330e10567e0511073380f4c6785f
