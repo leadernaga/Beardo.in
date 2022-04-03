@@ -626,7 +626,7 @@
         let google_data = JSON.parse(localStorage.getItem("google_data"));
         let fb_data = JSON.parse(localStorage.getItem("fb_data"));
         let wallet_p = document.querySelector(".header-top_menu__login__detail__wallet");
-        let wallet_balance = localStorage.getItem("wallet_balance");
+        let wallet_balance = localStorage.getItem("wallet_balance")||0;
 
         console.log(login_a)
         if (loggedin === "true") {
