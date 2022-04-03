@@ -80,8 +80,8 @@
             font-size: 17px;
             font-weight: 700;
             position: relative;
-            top:-115%;
-            right: -110%;
+            top:0;
+            right: 0;
             transform: translateY(-50%);
             cursor: pointer;
         }
@@ -312,8 +312,8 @@
         var someDate = new Date();
         var numberOfDaysToAdd = 7;
         var result = someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
-        let dat = new Date(result)
-        console.log('dat:', dat)
+        let dat = new Date(result);
+        console.log('dat:', dat);
         console.log(dat.toLocaleDateString('en-US', options));
     
         p.innerText = `Delivery by ${dat.toLocaleDateString('en-US', options)}`
