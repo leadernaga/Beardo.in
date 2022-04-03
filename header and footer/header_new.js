@@ -371,7 +371,7 @@ let header_new = () => {
       <a href="">
       <img class="lazy loading" src="https://www.beardo.in/images/vip-text.svg" alt="" data-was-processed="true">
       </a>
-      <a href="wallet/wallet.html">
+      <a href="wallet.html">
       <img class="lazy loading" src="https://www.beardo.in/images/wallet-text.svg" alt="" data-was-processed="true">
       </a>
       <a href="cart.html" class="cart-img">

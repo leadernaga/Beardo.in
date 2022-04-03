@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../header and footer/header.css">
     <title>Payment</title>
-    <link rel="stylesheet" href="./payment.css">
+    <link rel="stylesheet" href="./wallet/payment.css">
+    <script src="./header and footer/header-script.js"></script>
     <style>
            #abvimg{
             display: block;
@@ -231,9 +232,9 @@
 </body>
 </html>
 <script type="module">
-   import { header_new } from "../header and footer/header_new.js"
+  import { after_login,at_login,header,footer } from "./login_scripts/login_components.js"
 let header1 = document.getElementById("navbar");
-header1.innerHTML = header_new()
+header1.innerHTML = header()
 
 var cartarr=JSON.parse(localStorage.getItem("cartdata")) || [];
 var total=localStorage.getItem("total")
