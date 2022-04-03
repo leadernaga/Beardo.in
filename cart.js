@@ -44,7 +44,7 @@ function append(arr) {
 
         let image = document.createElement("img");
         image.src = elem.img_url;
-        image.setAttribute('id', 'cartimage')
+        image.setAttribute('id', 'cartimage');
 
         let div3 = document.createElement("div");
         div3.setAttribute('id', 'div3');
@@ -113,9 +113,9 @@ function append(arr) {
             arr.splice(index, 1)
             localStorage.setItem("cartdata", JSON.stringify(arr));
             document.getElementById('cart').innerHTML = null;
-            location.reload();
             append(arr);
             side();
+            location.reload();
             // location.reload();
         })
 
