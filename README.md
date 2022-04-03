@@ -5,9 +5,9 @@ Blog links ->
 
 Arshiya Moin - https://medium.com/@arshiyamoin99
 
-Devesh Goyal - https://medium.com/@devesh26goyal/beardo-in-project-b0b4b0095c37
+Chakripasumarthi - https://medium.com/@chakripasumarthi/clone-of-beardo-in-bffd7e194d0e
 
-Chakri - 
+Devesh Goyal - https://medium.com/@devesh26goyal/beardo-in-project-b0b4b0095c37
 
 Shubham Kashayap Verma - https://medium.com/@shubhamkashayapverma
 
