@@ -57,7 +57,7 @@ function append(arr) {
 
 
         let cpprice = document.createElement("h5");
-        cpprice.innerText = "₹ "+elem.price;
+        cpprice.innerText = "₹"+elem.price;
         cpprice.setAttribute('id', 'cartprice');
 
         let cutoff = document.createElement('h5');
