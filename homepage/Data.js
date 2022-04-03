@@ -365,7 +365,7 @@ function showProd(prod, loc) {
         // let rupee = el.price[0];
         let price = el.price;
         // console.log((+price));
-        mp.innerText = +price;
+        mp.innerText = "₹ "+price;
 
         btn.innerText = "ADD TO CART";
 
