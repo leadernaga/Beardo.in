@@ -17,16 +17,17 @@
     margin:auto;
     border-radius: 20px;
     margin-top: 50px;
-    width: 20%;
+    width: fit-content;
+    margin-bottom: 100px;
 }
 #adamount>div{
-
     display: flex;
+    width: 100%;
     justify-content:space-between;
     align-items:center;
 }
 input{
-    width:100%;
+    width:95%;
     height:30px;
     display: block;
     outline:none;
@@ -46,7 +47,7 @@ input{
 
 
 #exp>input,#cvv>input{
-    width:120px;
+    width:90%;
     height:30px;
     border-radius: 10px;
 }

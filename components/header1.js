@@ -27,7 +27,7 @@ function header(){
         <input id="header1_input" placeholder="search" />
       </div>
       <img  id="header1_img2" src="https://www.beardo.in/images/vip-text.svg" alt="" />
-      <img  id="header1_img3" src="https://www.beardo.in/images/wallet-text.svg" alt="" onclick="window.location.href='./wallet/wallet.html'" />
+      <img  id="header1_img3" src="https://www.beardo.in/images/wallet-text.svg" alt="" onclick="window.location.href='wallet.html'" />
       <img id="header1_img3" src="https://www.beardo.in/images/home-2018-05-cart.png" alt="" onclick="window.location.href='./cart.html'"/>
       </svg>
       <div id="cart_count">0</div>

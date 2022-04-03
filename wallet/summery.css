@@ -111,6 +111,7 @@ input:checked + .slider:before {
       width:100%;
       margin: auto;
       margin-left: 200px;
+      margin-bottom: 100px;
   }
   #right{
       width: 300px;

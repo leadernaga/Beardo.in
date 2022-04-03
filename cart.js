@@ -235,7 +235,7 @@ function side(totalamount) {
     placeorder.innerText = `PLACE ORDER`;
     placeorder.setAttribute('id', 'placeorder');
     placeorder.addEventListener('click', function() {
-        window.location.href = "../wallet/checkout.html"
+        window.location.href = "checkout.html"
     })
 
     div5.append(coupon, offer, pricedetails, subtotal, dcharges, youpay, placeorder);
