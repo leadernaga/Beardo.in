@@ -227,7 +227,7 @@ body {
 }
 
 #poster>img {
-    height: 430px;
+    /* height: 500px; */
     width: 100%;
 }
 
