@@ -85,7 +85,7 @@ function showProd(prod, loc) {
         ndiv.append(name);
 
         cp.innerText = el.cutPrice;
-        mp.innerText = el.price;
+        mp.innerText = "₹"+el.price;
 
 
         btn.innerText = "ADD TO CART";
@@ -150,7 +150,7 @@ function showComboData(prod, count) {
             nameP.innerText = el.name;
             disimg.src = el.discountSticker;
             cp.innerText = el.cutPrice;
-            mp.innerText = el.price;
+            mp.innerText = "₹"+el.price;
             btn.innerText = "ADD TO CART";
 
             pricediv.append(cp, mp, btn);
