@@ -7,9 +7,9 @@ function header(){
         id="header1_img1"
         src="https://www.beardo.in/images/logo-white.png"
       />
-      <div id="header1_product"  class="hover_top" onclick="window.location.href='./product page/beardo project/product.html'">Products</div>
+      <div id="header1_product"  class="hover_top" onclick="window.location.href='./product.html'">Products</div>
       
-      <div id="header1_concerns"  class="hover_top" onclick="window.location.href='./product page/beardo project/product.html'">Concerns</div>
+      <div id="header1_concerns"  class="hover_top" onclick="window.location.href='./product.html'">Concerns</div>
       <div id="search_input_div" onclick="window.location.href='search.html'">
         <svg
           id="svg1"
@@ -28,18 +28,7 @@ function header(){
       </div>
       <img  id="header1_img2" src="https://www.beardo.in/images/vip-text.svg" alt="" />
       <img  id="header1_img3" src="https://www.beardo.in/images/wallet-text.svg" alt="" onclick="window.location.href='./wallet/wallet.html'" />
-      <svg
-      onclick="window.location.href='cart.html'"
-        id="svg2"
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="50"
-        fill="currentColor"
-        class="bi bi-bag-heart-fill"
-        viewBox="0 0 16 16"
-        <path
-          d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"
-        />
+      <img id="header1_img3" src="https://www.beardo.in/images/home-2018-05-cart.png" alt="" onclick="window.location.href='./cart.html'"/>
       </svg>
       <div id="cart_count">0</div>
       <div id="login_inner" class="hover_top" onclick="window.location.href='./login.html'">Login</div>

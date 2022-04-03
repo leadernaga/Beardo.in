@@ -79,6 +79,9 @@
             color: #c80504;
             font-size: 17px;
             font-weight: 700;
+            position: relative;
+            top:-115%;
+            right: -110%;
             transform: translateY(-50%);
             cursor: pointer;
         }
@@ -260,13 +263,7 @@
     append(recommended, parent);
 
 
-    var date = document.getElementById("check");
-    date.addEventListener("keydown", function(e){
-        if(e.code == "Enter"){
-            validate(e);
-        }
-        window.location.href="https://www.beardo.in/cart";
-    });
+    
 
     function validate(e){
         let expected = document.getElementById('nothing');

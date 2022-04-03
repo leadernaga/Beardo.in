@@ -419,7 +419,7 @@
   var main = document.getElementById("main");
   var bal = document.getElementById("bal");
   var adtowallet = document.getElementById("adtowallet");
-  if (login == undefined || login == false) {
+  if (login === "false" || login === undefined) {
     main.style.display = "block";
   } else {
     bal.style.display = "block";
@@ -433,4 +433,10 @@
   document.getElementById("adbtn").addEventListener("click", () => {
     window.location.href = "./addamount.html";
   });
+
+  let product = document.getElementById("product");
+
+product.addEventListener("click", () => {
+  window.location.href = "product.html";
+})
 </script>

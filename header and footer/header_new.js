@@ -8,7 +8,7 @@ let header_new = () => {
           <nav>
               <li class="">
                   <!-- add class show to show category -->
-                  <a href="javascript:void(0);">Products<span class="arrow-down"></span></a>
+                  <a id="product" href="javascript:void(0);">Products<span class="arrow-down"></span></a>
                   <div class="categories-new-body__cat-header">
                       <div class="categories-new-body__cat-header__main-cat category">
                           <a href="javascript:void(0);" class="active" id="cat-18">Combos</a>
