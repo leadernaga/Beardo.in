@@ -57,7 +57,7 @@ function append(arr) {
 
 
         let cpprice = document.createElement("h5");
-        if(el.price[0]=="₹"){
+        if(elem.price[0]=="₹"){
             cpprice.innerText = elem.price;
         }else{
         cpprice.innerText = "₹"+elem.price;
