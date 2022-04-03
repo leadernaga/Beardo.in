@@ -115,7 +115,7 @@ function append(arr) {
             document.getElementById('cart').innerHTML = null;
             append(arr);
             side();
-            // location.reload();
+            location.reload();
             // location.reload();
         })
 
