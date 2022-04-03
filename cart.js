@@ -84,9 +84,9 @@ function append(arr) {
             }
             localStorage.setItem("cartdata", JSON.stringify(arr));
             document.getElementById('cart').innerHTML = null;
-            // location.reload();
             append(arr);
             side();
+            location.reload();
         })
 
         let quantity = document.createElement("p");
@@ -101,9 +101,9 @@ function append(arr) {
             totalamount = 0;
             localStorage.setItem("cartdata", JSON.stringify(arr));
             document.getElementById('cart').innerHTML = null;
-            // location.reload();
             append(arr);
             side();
+            location.reload();
         })
 
         let remove = document.createElement('button');
