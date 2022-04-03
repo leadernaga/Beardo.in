@@ -84,7 +84,7 @@ function append(arr) {
             }
             localStorage.setItem("cartdata", JSON.stringify(arr));
             document.getElementById('cart').innerHTML = null;
-            location.reload();
+            // location.reload();
             append(arr);
             side();
         })
@@ -101,7 +101,7 @@ function append(arr) {
             totalamount = 0;
             localStorage.setItem("cartdata", JSON.stringify(arr));
             document.getElementById('cart').innerHTML = null;
-            location.reload();
+            // location.reload();
             append(arr);
             side();
         })
@@ -116,7 +116,7 @@ function append(arr) {
             location.reload();
             append(arr);
             side();
-            location.reload();
+            // location.reload();
         })
 
 

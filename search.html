@@ -144,10 +144,19 @@ document.getElementById("cross").addEventListener("click", function(){
 
     
     function validate(e){
+       
+
         let parent = document.getElementById("browse");
         parent.innerHTML = null;
         kichh.style.background= "black"
         searcharr.forEach(( { imageUrl, name, cutPrice, price }) =>{
+
+            // let button1 = document.createElement('button');
+            // button.innerText = `<-HOME`;
+            // button.addEventListener("click", function(){
+            //     window.location.href = "./index.html"
+            // })
+
 
             let div = document.createElement("div");
             div.setAttribute('id', 'mycontainer');
