@@ -143,7 +143,7 @@ document.getElementById("cross").addEventListener("click", function(){
     })
 
     
-    function validate(){
+    function validate(e){
         let parent = document.getElementById("browse");
         parent.innerHTML = null;
         kichh.style.background= "black"
@@ -171,6 +171,24 @@ document.getElementById("cross").addEventListener("click", function(){
             let button = document.createElement("button");
             button.innerText = `ADD TO CART`
         button.setAttribute('id', 'myaddtocart');
+        button.addEventListener("click", function(){
+            console.log(arr);
+            var arr = JSON.parse(localStorage.getItem("cartdata")) || []; 
+            
+            var obj = {};
+            obj.name = name;
+            obj.price = price;
+            obj.cutPrice = cutPrice;
+            obj.img_url = imageUrl;
+            obj.qty = 1;
+
+            arr.push(obj);
+            console.log(arr);
+            localStorage.setItem("cartdata", JSON.stringify(arr));
+            alert(`ITEM ADDED TO CART`);
+            location.reload();
+
+        });
        
 
             div.append(img, title, mainPrice, button);
