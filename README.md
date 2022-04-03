@@ -3,14 +3,16 @@
 
 Blog links ->
 
-Devesh Goyal - https://medium.com/@devesh26goyal/beardo-in-project-b0b4b0095c37
-
-Shubham Kashayap Verma - https://medium.com/@shubhamkashayapverma
-
 Arshiya Moin - https://medium.com/@arshiyamoin99
 
-Naga -
+Devesh Goyal - https://medium.com/@devesh26goyal/beardo-in-project-b0b4b0095c37
 
 Chakri - 
 
+Shubham Kashayap Verma - https://medium.com/@shubhamkashayapverma
+
 Swati - 
+
+Naga -
+
+
