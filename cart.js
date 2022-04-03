@@ -28,8 +28,18 @@ function append(arr) {
         if (elem.qty == undefined) {
             elem.qty = 1;
         }
+        if(elem.price[0]=="₹"){
+            elem.price.trim();
+            let price = "";
+            for(var i=1;i<elem.price.length;i++){
+                price += elem.price[i];
+            }
+        totalamount += elem.qty * price;
+        // console.log(elem.price,price, totalamount)
+        }else{
+            totalamount += elem.qty * elem.price;
+        }
 
-        totalamount += elem.qty * elem.price;
 
 
         div5.innerHTML = null;
