@@ -11,7 +11,7 @@ Chakri -
 
 Shubham Kashayap Verma - https://medium.com/@shubhamkashayapverma
 
-Swati - 
+Swati sharma - https://medium.com/@ss2958560/clone-of-beardo-in-4ed3163f3232
 
 Naga -
 
