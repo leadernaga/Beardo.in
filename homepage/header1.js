@@ -1,4 +1,4 @@
-function header(){
+function header() {
     return `
     <div id="header_fixed">
     <div id="header1">
@@ -43,7 +43,7 @@ function header(){
         />
       </svg>
       <div id="cart_count"></div>
-      <div id="login_inner" class="hover_top" onclick="window.location.href='./login.html'">Login</div>
+      <div id="login_inner" class="hover_top" onclick="window.location.href='../login.html'">Login</div>
     </div>
   </div>
   <style>
@@ -131,6 +131,6 @@ margin-left:.5%;
    
     </style>
     `
-  }
-  
-  export {header}
+}
+
+export { header }
