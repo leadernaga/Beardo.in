@@ -3,7 +3,7 @@
 
 Blog links ->
 
-Arshiya Moin - https://medium.com/@arshiyamoin99
+Arshiya Moin - https://medium.com/@arshiyamoin99/clone-of-beardo-in-1c51914e8dc3
 
 Chakripasumarthi - https://medium.com/@chakripasumarthi/clone-of-beardo-in-bffd7e194d0e
 
