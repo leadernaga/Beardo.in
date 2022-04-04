@@ -9,7 +9,7 @@ Chakripasumarthi - https://medium.com/@chakripasumarthi/clone-of-beardo-in-bffd7
 
 Devesh Goyal - https://medium.com/@devesh26goyal/beardo-in-project-b0b4b0095c37
 
-Shubham Kashayap Verma - https://medium.com/@shubhamkashayapverma
+Shubham Kashayap Verma - https://medium.com/@shubhamkashayapverma/clone-of-beardo-in-ca054d5f070e
 
 Swati sharma - https://medium.com/@ss2958560/clone-of-beardo-in-4ed3163f3232
 
