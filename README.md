@@ -18,3 +18,15 @@ Swati sharma - https://medium.com/@ss2958560/clone-of-beardo-in-4ed3163f3232
 Naga -
 
 
+A web application to buy men's grooming products.
+Github Link: https://github.com/leadernaga/Beardo.in
+Features:
+Social Sign-in/Sign-up
+Location-based vehicle gallery
+User authentication
+Tech Stack: HTML | CSS | Javascript 
+Areas of responsibility:
+Built authentication and integrated it with the frontend.
+Laid out the database schema and build the REST API for the same.
+Developed the Home and Tariff page. 
+A collaborative project built by a team of 6 executed in 4 days.
