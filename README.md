@@ -1,32 +1,95 @@
-# Beardo.in
- Unit 3 construct Week Project
- 
- Project link - https://beardoclone.netlify.app/
+Description
+Producer of personal care products intended to offer assistance in maintaining and grooming beards. The company’s products include beard washes, balm, hair growth oil, serum, face washes, wax, soaps and beard combs among others, thereby enabling consumers to pamper their face mane in a hassle-free manner.
 
-Blog links ->
+Website: — www.beardo.in
 
-Arshiya Moin - https://medium.com/@arshiyamoin99/clone-of-beardo-in-1c51914e8dc3
+Creators:
 
-Chakripasumarthi - https://medium.com/@chakripasumarthi/clone-of-beardo-in-bffd7e194d0e
+Arshiya Moin | LinkedIn,
 
-Devesh Goyal - https://medium.com/@devesh26goyal/beardo-in-project-b0b4b0095c37
+Chakravarthi Pasumarthi | LinkedIn
 
-Shubham Kashayap Verma - https://medium.com/@shubhamkashayapverma/clone-of-beardo-in-ca054d5f070e
+Devesh Goyal | LinkedIn,
 
-Swati sharma - https://medium.com/@ss2958560/clone-of-beardo-in-4ed3163f3232
+Naga Polamarasetti | LinkedIn,
 
-Naga -
+Shubham Verma | LinkedIn,
+
+Swati Sharma | LinkedIn
+
+We are in Unit-3 from Web-16 Batch and students of
+
+Masai School
+
+at the end of unit Masai team is assigned a project and the project is based on the technology we are learned in the whole unit in this project we are used HTML, CSS and JAVASCRIPT(Es6) and APIs
+
+## Technologies we used
+- HTML , CSS
+- JAVASCRIPT
+- Browser Local Storage for Cart Section
+-Google and Facebook Api’s for a quick Login and Signup
+This is my story of the making of beardo.in project. In this project I learned a lot and did some mistakes as well but because my teammates are understanding of my mistakes I was able to learn from my mistakes. I had lot of fun building this web and we succeeded in building almost a picture perfect clone of the real website we are all proud of it. In this project I mainly did work on login and sign up page and in that I used the real google’s and facebook’s OAuth(Open Authorization) to build the the google and facebook sign in so anyone who uses google and facebook can easily sign up so you don’t have to go through the process of making a account we can directly identify your profile from google and facebook. I had to go through a lot of hassle to make it work but in the end I was successfully able to implement it. So yeah I am proud of it.
+
+## Features
+
+- Login and logout functionality.
+- Navbar contains various product categories.
+- On product page particular category products with multiple sorting options displayed.
+- On Checkout page price is calculated dynamically.
 
 
-A web application to buy men's grooming products.
-Github Link: https://github.com/leadernaga/Beardo.in
-Features:
-Social Sign-in/Sign-up
-Location-based vehicle gallery
-User authentication
-Tech Stack: HTML | CSS | Javascript 
-Areas of responsibility:
-Built authentication and integrated it with the frontend.
-Laid out the database schema and build the REST API for the same.
-Developed the Home and Tariff page. 
-A collaborative project built by a team of 6 executed in 4 days.
+Home page
+
+
+Login and Signup
+
+- On this page users can signup/sign-in based on whether the user is already registered or not.
+
+
+Sidebar
+
+
+Product Page
+
+- On the Product Page header, user can click on the ‘Login’ Icon to either Sign In or Create an Account
+- Once the user has logged in, they are taken back to the Landing Page.
+- On the top navbar, the user can navigate to the following categories: `All products`, to open the products page
+- On the Products Page
+— On clicking on each product ‘Quick View’ button. Clicking on it, the user will be shown the details of the product along with the option to add the product to their Cart.
+- On hovering on products user get button called ‘BUY NOW’ bye clicking on it products get add into cart, and user will get popup to go for cart page or checkout page.
+- On the Cart page
+— The user can remove a product from the cart.
+— Able to Change the quantity of the product
+
+- Place the Order
+- On placing the Order, user will redirected to payment page
+- Once the payment is done user is will redirected to Home Page.
+
+- A complete detailed product page displays all the details regarding the product, here we have given the user an option to add to the cart option if he/she like to buy the product.
+
+
+Cart Page
+
+Cart page has all the items that are added to the cart/bag by the user.
+After adding items user need to give his residential where he wants the delivery and press the continue button .
+Now user need to provide his card details for online payment and then he can pay the bill amount online.
+User can also avail promo codes for discount too.
+Now Roles and Responsibilities of Team Members
+Arshiya Moin — Header And Footer
+
+Chakri — Cart, Payment
+
+Devesh Goyal — Login Signup
+
+Naga Polamarasetti — Wallet, Checkout
+
+Swati Sharma — Product page
+
+Shubham Verma — Home page
+
+Key Learning Points and Improvements that Can be Made →
+I learned a lot in this project I learned that I was not the best at collaborating but I will learn from my mistakes and will work on my collaboration skill so that I can be a good teammate. I will make sure that I will not repeat the same mistake. Other then that as a team we are a good and encouraging team like if we a teammate needs any help everyone will provide the that the person needs. We all go well together, we did not get into any conflicts but, we are not perfect like. We could have improved our timing and some work of styling but overall we were on point and almost perfect with our work and I would like to work with them again.
+
+Thank you for reading.
+
+
