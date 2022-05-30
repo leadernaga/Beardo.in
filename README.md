@@ -3,6 +3,8 @@ Producer of personal care products intended to offer assistance in maintaining a
 
 Website: — www.beardo.in
 
+Our Cloned website link - https://beardoclone.netlify.app/
+
 Creators:
 
 Arshiya Moin | LinkedIn,
