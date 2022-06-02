@@ -1,7 +1,9 @@
 ## Description
 Producer of personal care products intended to offer assistance in maintaining and grooming beards. The company’s products include beard washes, balm, hair growth oil, serum, face washes, wax, soaps and beard combs among others, thereby enabling consumers to pamper their face mane in a hassle-free manner.
 
-Real Website: — www.beardo.in
+Real Website: — [www.beardo.in](www.beardo.in)
+
+Our Clone website link -[https://beardoclone.netlify.app/](https://beardoclone.netlify.app/)
 
 ## Creators
 
@@ -22,6 +24,7 @@ Real Website: — www.beardo.in
 at the end of unit Masai team is assigned a project and the project is based on the technology we are learned in the whole unit in this project we are used HTML, CSS and JAVASCRIPT(Es6) and APIs
 
 ## Technologies we used
+
 - HTML
 
 - CSS
@@ -42,22 +45,20 @@ at the end of unit Masai team is assigned a project and the project is based on 
 
 ## `Home page`
 
-<img src="images/Medura1.png" width="90%">
-<img src="images/Medura2.png" width="90%">
-<img src="images/Medura3.png" width="90%">
-<img src="images/Medura4.png" width="90%">
-<img src="images/Medura5.png" width="90%">
-<img src="images/Medura6.png" width="90%">
-<img src="images/Medura7.png" width="90%">
-<img src="images/Medura8.png" width="90%">
+<img src="images/Beardo1.png" width="90%">
 
-Login and Signup
+## `Login and Signup`
 
 - On this page users can signup/sign-in based on whether the user is already registered or not.
 
-
-Sidebar
-
+<img src="images/Beardo2.png" width="90%">
+<img src="images/Beardo3.png" width="90%">
+<img src="images/Beardo4.png" width="90%">
+<img src="images/Beardo5.png" width="90%">
+<img src="images/Beardo6.png" width="90%">
+<img src="images/Beardo7.png" width="90%">
+<img src="images/Beardo8.png" width="90%">
+<img src="images/Beardo9.png" width="90%">
 
 ## `Product Page`
 
