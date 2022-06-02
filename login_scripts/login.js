@@ -2,16 +2,15 @@ window.addEventListener("load", () => {
   let loggedin = localStorage.getItem("loggedin");
 
   if (loggedin === "false" || loggedin == null) {
-
     let container = document.getElementById("container");
-    container.style.padding = "50px 0"
+    container.style.padding = "50px 0";
 
     let footer = document.getElementById("footer");
     footer.style.display = "block";
 
     let login_btn_on_header = document.getElementById("login_btn_on_header");
 
-    login_btn_on_header.innerHtml = '"Login " <span class="arrow-down"></span>'
+    login_btn_on_header.innerHtml = '"Login " <span class="arrow-down"></span>';
 
     let frmloginemail = document.querySelector("#frmloginemail");
     let frmloginpassword = document.querySelector("#frmloginpassword");
