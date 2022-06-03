@@ -5,6 +5,8 @@ Real Website: — [www.beardo.in](www.beardo.in)
 
 Our Clone website link -[https://beardoclone.netlify.app/](https://beardoclone.netlify.app/)
 
+And here is the link of a small presentation we did on it - [Click here to view](https://drive.google.com/file/d/1j1ucLXD_mg3m3juLfFxofo2fnYxu_jI2/view)
+
 ## Creators
 
 - Arshiya Moin
