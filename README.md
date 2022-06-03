@@ -7,6 +7,8 @@ Our Clone website link -[https://beardoclone.netlify.app/](https://beardoclone.n
 
 And here is the link of a small presentation we did on it - [Click here to view](https://drive.google.com/file/d/1j1ucLXD_mg3m3juLfFxofo2fnYxu_jI2/view)
 
+Blog link - [here](https://medium.com/@devesh26goyal/beardo-in-project-b0b4b0095c37)
+
 ## Creators
 
 - Arshiya Moin
